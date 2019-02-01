@@ -1,0 +1,101 @@
+@import url('normalize.css');
+@import url('bootstrap.min.css');
+
+.text-center{
+    color: black;
+    top: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center!important;
+}
+
+.logotec{
+    margin-top: 10px;
+
+}
+.formlogin{
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+/*Ventana Menu*/
+
+
+.menuPrincipal{
+    position: absolute;
+    right: 675px;
+    top: 100px;
+    font: 1em sans-serif;
+    font-size: 30px;
+    margin: auto;
+
+}
+
+header {
+    background-color: #333333;
+    padding: 5px;
+    text-align: initial;
+    font-size: 50px;
+    font-style: unset;
+    color: white;
+
+}
+
+.navbar-brand{
+    font-size: 100%;
+    
+
+}
+.btn{
+    max-width: 400px;
+    height: 50px;
+    background-color: gainsboro;
+    margin: auto;
+    margin-top: 15px;
+}
+.btnMenu{
+    max-width: 700px;
+    min-width: 400px;
+    position: relative;
+    font-size: 20px;
+    margin-right: 42.5px;
+    margin: auto;
+}
+.textoMenu{
+    font-size: 30px;
+   
+
+}
+.btnsalir{
+    width: 150px;
+    background-color: grey;
+}
+/*Ventana Registro */
+.formGroupReg{
+    font-size: 25px;
+}
+.btnreg{
+    width: 200px;
+}
+.labelCont{      
+    font-size: 15px;
+    margin-right: 85%;
+}
+.formPart{
+    max-width: 100px;
+}
+.checkboxcss{
+    font-size: 18px;
+}
+.selectsmtr{
+    max-width: 100px;
+}
+.labelentr{
+    font-size: 30px;
+    margin: auto;
+    margin-top: 50px;  
+}

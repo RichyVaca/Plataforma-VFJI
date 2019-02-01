@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/estilo.css">
+<body>
+    <!--Barra-->
+    <div class="container-fluid">
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="img/logoTec.png" width="40" height="40" class="d-inline-block align-top logoTec" alt="">
+                VFJI</img>
+            </a>
+            <form action="form-inline">
+                <button onclick=location.href='index.html' class="btn btn-secondary my-2 my-sm-0 btnsalir btn-warning" type="button">Salir</button>
+            </form>
+            </nav>
+        <div class="text-center">
+            <a class="textoMenu">Registro Asesor</a>   
+        </div>
+        <div class="container-fluid row">
+            <div class="form-group formGroupReg col-sm-6">
+                <label for="nombre">Nombre: </label>
+                <input type="text" class="form-control formReg" id="nombre" value="Nombre Completo">
+                <label for="telefono">Telefono</label>
+                <input type="text" class="form-control formReg" id="telefono" value="Ingresar Telefono">
+                <label for="Plantel">Plantel</label>
+                <select class="form-control" id="Plantel">
+                    <option>Instituto Tecnologico de Colima</option>
+                    <option>Instituto Tecnologico de Ciudad Guzman</option>
+                    <option>Instituto Tecnologico de Ciudad Juarez</option>
+                    <option>Instituto Tecnologico de Puebla</option>    
+                </select>
+                <label for="especialidad">Especialidad</label>
+                <input type="text" class="form-control formReg" id="especialidad" value="Ingresar Especialidad">
+            </div>
+            <div class="form-group formGroupReg col-sm-6">
+                <label for="CURP">CURP</label>
+                <input type="text" class="form-control formReg" id="CURP" value="Ingresar CURP">
+                <label for="Email">Correo Electronico</label>
+                <input type="text" class="form-control formReg" id="Email" value="example@correo.com">
+                <label for="Grado">Grado</label>
+                <select class="form-control" id="Grado">
+                    <option>Licenciatura</option>
+                    <option>Maestria</option>
+                    <option>Doctorado</option>    
+                </select>
+                <label for="l-inv">Linea de Investigación</label>
+                <input type="text" class="form-control formReg" id="l-inv" value="Ingresar Linea de Investigación">
+            </div>
+            <div class="col-sm-12 text-center">
+                <button onclick= type="button" class="btn btn-black btnreg text-center btn-success">Guardar</button>
+                <button onclick= type="button" class="btn btn-black btnreg text-center">Editar</button>
+                <button onclick=location.href='Ventana_Menu.html' type="button" class="btn btn-black btnreg text-center btn-warning">Cancelar</button>
+            </div>
+
+</body>
+</html>
