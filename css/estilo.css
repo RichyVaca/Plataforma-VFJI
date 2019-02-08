@@ -105,7 +105,7 @@ table, th, td{
     padding: 5px;
     text-align: center;
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 16 px;
 }
 table th{
     background-color:orange;
