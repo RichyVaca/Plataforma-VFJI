@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="../css/estilo.css">
 <body>
 <!--Barra-->
 <div class="container-fluid">
@@ -24,7 +24,7 @@
         <div class="text-center">
             <a class="textoMenu">Proyectos de VFJI</a>
         </div>
-        
+
         <div class="container-fluid">
                 <div class="text-center">
                     <div class="col-sm-12">
@@ -82,6 +82,6 @@
                     </div>
                 </div>
             </div>
-    
+
 </body>
 </html>

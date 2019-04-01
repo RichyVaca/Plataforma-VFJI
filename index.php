@@ -22,11 +22,5 @@
             <button onclick= location.href='Ventana_Menu.html' class="btn btn-block"  type="button">Iniciar Sesión</button>
             <button onClick= location.href='Registro.html' class="btn btn-block" type="button">Registrarse</button>
         </form>
-
-        <!-- Aquí hacemos la conexión con la base de datos -->
-        <?php
-        
-         ?>
-
 </body>
 </html>
