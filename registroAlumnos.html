@@ -23,11 +23,12 @@
                 <a class="textoMenu">Registro Alumno</a>
             </div>
     </div>
-      <form class="formulario" action="alumnos.php" method="post">
+
     <div class="container-fluid row">
 
-
         <div class="form-group formGroupReg col-sm-6">
+
+        <form name="formulario" action="alumnos.php" method="post">
             <label for="CURP">CURP</label>
             <input required type="text" class="form-control formReg" id="CURP" value="" name="curp">
             <label for="nombre">Nombre: </label>
@@ -75,12 +76,12 @@
             <input required type="text" class="form-control formReg" id="Email" value="example@itcolima.edu.mx">
         </div>
         <div class="col-sm-12 text-center">
-            <button onclick= type="button" class="btn btn-black btnreg text-center btn-success">Guardar</button>
+            <button type="submit" class="btn btn-black btnreg text-center btn-success">Guardar</button>
             <button onclick= type="button" class="btn btn-black btnreg text-center">Editar</button>
             <button onclick=location.href='Ventana_Menu.html' type="submit" class="btn btn-black btnreg text-center btn-warning">Cancelar</button>
         </div>
-
+</form>
     </div>
-    </form>
+
 </body>
 </html>
