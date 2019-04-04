@@ -19,10 +19,7 @@
 
          <hr>
         <?php
-        echo $_POST['optradio'];
-
-        }
-
+          echo $_POST['optradio'];
          ?>
 
   </body>
