@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>VFJI</title>
 </head>
-<link rel="stylesheet" href="css/estilo.css">
+<link rel="stylesheet" href="../css/estilo.css">
 <body>
     <!--Barra-->
     <div class="container-fluid">
         <nav class="navbar navbar-dark bg-dark">
             <a class="navbar-brand" href="#">
-                <img src="img/logoTec.png" width="40" height="40" class="d-inline-block align-top logoTec" alt="">
+                <img src="../img/logoTec.png" width="40" height="40" class="d-inline-block align-top logoTec" alt="">
                 VFJI</img>
             </a>
             <form action="form-inline">
@@ -20,9 +20,9 @@
             </form>
             </nav>
             <div class="text-center">
-                <a class="textoMenu">Registro</a>   
+                <a class="textoMenu">Registro</a>
             </div>
-            
+
     </div>
     <div class="container-fluid row">
         <div class="form-group formGroupReg col-sm-6">
@@ -35,7 +35,7 @@
                 <option>Instituto Tecnologico de Colima</option>
                 <option>Instituto Tecnologico de Ciudad Guzmán</option>
                 <option>Instituto Tecnologico de Ciudad Juárez</option>
-                <option>Instituto Tecnologico de Puebla</option>    
+                <option>Instituto Tecnologico de Puebla</option>
             </select>
             <label for="especialidad">Carrera</label>
             <input type="text" class="form-control formReg" id="especialidad" value="Ingresar Carrera">
@@ -51,7 +51,7 @@
             <select class="form-control" id="Grado">
                 <option>Licenciatura</option>
                 <option>Maestría</option>
-                <option>Doctorado</option>    
+                <option>Doctorado</option>
             </select>
             <label for="l-inv">Línea de Investigación</label>
             <input type="text" class="form-control formReg" id="l-inv" value="Ingresar Linea de Investigación">
@@ -62,9 +62,9 @@
             <button onclick= type="button" class="btn btn-black btnreg text-center btn-success">Guardar</button>
             <button onclick=location.href='index.html' type="button" class="btn btn-black btnreg text-center btn-warning">Cancelar</button>
         </div>
-        
+
     </div>
-    
+
 
 </body>
 </html>

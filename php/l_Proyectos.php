@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Proyectos de VFJI</title>
 </head>
 <body>
     <link rel="stylesheet" href="../css/estilo.css">
@@ -13,12 +13,12 @@
 <div class="container-fluid">
     <nav class="navbar navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
-            <img src="img/logoTec.png" width="40" height="40" class="d-inline-block align-top logoTec" alt="">
+            <img src="../img/logoTec.png" width="40" height="40" class="d-inline-block align-top logoTec" alt="">
             VFJI</img>
         </a>
         <form action="form-inline">
-            <button onclick=location.href='Reportes.html' class="btn-warning btn btn-secondary my-2 my-sm-0 btnsalir" type="button">Regresar</button>
-            <button onclick=location.href='index.php' class="btn-warning btn btn-secondary my-2 my-sm-0 btnsalir" type="button">Salir</button>
+            <button onclick=location.href='../Reportes.html' class="btn-warning btn btn-secondary my-2 my-sm-0 btnsalir" type="button">Regresar</button>
+            <button onclick=location.href='../index.php' class="btn-warning btn btn-secondary my-2 my-sm-0 btnsalir" type="button">Salir</button>
         </form>
         </nav>
         <div class="text-center">
@@ -85,3 +85,17 @@
 
 </body>
 </html>
+
+<!-- Inicio de PHP -->
+<?php
+  $id
+  $nProyecto
+  $asesor1
+  $asesor2
+  $part1
+  $part2
+  $part3
+  $carrera
+
+
+ ?>
