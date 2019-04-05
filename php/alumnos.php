@@ -1,10 +1,9 @@
 <?php
-  $curp = ['curp'];
-  $nombre= ['nombre'];
-  $telefono=['telefono'];
-  $correo=['correo'];
-
-  echo $curp . $nombre . $telefono . $correo;
-  echo ['optradio'];
-
+  include("registroAlumnos.php");
+  $curp = $_GET['curp'];
+  $nombre= $_GET['nombre'];
+  $telefono=$_GET['telefono'];
+  $correo= $_GET['correo'];
+  $sexo = $_GET['optradio'];
+  echo $curp, "Chingatumadre";
 ?>

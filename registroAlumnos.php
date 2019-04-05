@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="css/estilo.css">
+<link rel="php" href="../php/alumnos.php">
 <body>
     <!-- Barra -->
     <div class="container-fluid">
@@ -23,19 +24,19 @@
                 <a class="textoMenu">Registro Alumno</a>
             </div>
     </div>
-    <form name="formulario" action="alumnos.php" method="post"></form>
+    <form name="formulario" action="../Plataforma-VFJI/php/alumnos.php" method="post">
         <div class="container-fluid row">
             <div class="form-group formGroupReg col-sm-6">
                 <label for="CURP">CURP</label>
-                <input required type="text" class="form-control formReg" id="CURP" value="" name="curp" method="post">
+                <input required type="text" class="form-control formReg" id="CURP" value="" name="curp" method="get">
                 <label for="nombre">Nombre: </label>
-                <input required type="text" class="form-control formReg" id="nombre" value="" name="nombre" method="post">
+                <input required type="text" class="form-control formReg" id="nombre" value="" name="nombre" method="get">
                 <label for="nombre">Género: </label>
-                <label class="radio-inline checkboxcss"><input type="radio" name="optradio" value=Masculino methond="post">Masculino</label>
-                <label class="radio-inline checkboxcss"><input type="radio" name="optradio" value=Femenino methond="post">Femenino</label>
+                <label class="radio-inline checkboxcss"><input type="radio" name="optradio" value=Masculino methond="get">Masculino</label>
+                <label class="radio-inline checkboxcss"><input type="radio" name="optradio" value=Femenino methond="get">Femenino</label>
                 <div></div>
                 <label for="telefono">Teléfono</label>
-                <input required type="text" class="form-control formReg" id="telefono" value="">
+                <input required type="text" class="form-control formReg" id="telefono" value="" name="telefono">
                 <label for="Plantel">Plantel</label>
                 <select class="form-control" id="Plantel">
                     <option>Instituto Tecnológico de Colima</option>
@@ -75,7 +76,7 @@
             <div class="col-sm-12 text-center">
                 
             </div>
-                <button onclick=location.href='../php/alumnos.php' class="btn btn-black btnreg text-center btn-success">Guardar</button>
+                <input type="submit" src="../php/alumnos.php" class="btn btn-black btnreg text-center btn-success"/>
                 <button onclick= type="button" class="btn btn-black btnreg text-center">Editar</button>
                 <button onclick=location.href='Ventana_Menu.html' type="submit" class="btn btn-black btnreg text-center btn-warning">Cancelar</button>
             </div>
