@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<link rel="stylesheet" href="css/estilo.css">
+<link rel="stylesheet" href="../css/estilo.css">
 <link rel="php" href="../php/alumnos.php">
 <body>
     <!-- Barra -->
     <div class="container-fluid">
         <nav class="navbar navbar-dark bg-dark">
             <a class="navbar-brand" href="#">
-                <img src="img/logoTec.png" width="40" height="40" class="d-inline-block align-top logoTec" alt="">
+                <img src="../img/logoTec.png" width="40" height="40" class="d-inline-block align-top logoTec" alt="">
                 VFJI</img>
             </a>
             <form action="form-inline">
@@ -74,7 +74,7 @@
                 <input required type="text" class="form-control formReg" id="Email" value="example@itcolima.edu.mx">
             </div>
             <div class="col-sm-12 text-center">
-                
+
             </div>
                 <input type="submit" src="../php/alumnos.php" class="btn btn-black btnreg text-center btn-success"/>
                 <button onclick= type="button" class="btn btn-black btnreg text-center">Editar</button>
