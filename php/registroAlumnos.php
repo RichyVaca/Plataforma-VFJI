@@ -24,7 +24,7 @@
                 <a class="textoMenu">Registro Alumno</a>
             </div>
     </div>
-    <form name="formulario" action="../Plataforma-VFJI/php/alumnos.php" method="post">
+    <form name="formulario" action="../php/alumnos.php" method="post">
         <div class="container-fluid row">
             <div class="form-group formGroupReg col-sm-6">
                 <label for="CURP">CURP</label>
