@@ -24,21 +24,22 @@
                 <a class="textoMenu">Registro Alumno</a>
             </div>
     </div>
-    <form name="formulario" action="../php/alumnos.php" method="post">
+    <form name="formulario" action="../php/alumnos.php" method="POST">
         <div class="container-fluid row">
             <div class="form-group formGroupReg col-sm-6">
                 <label for="CURP">CURP</label>
-                <input required type="text" class="form-control formReg" id="CURP" value="" name="curp" method="get">
+                <input required type="text" class="form-control formReg" id="CURP" value="" name="curp">
                 <label for="nombre">Nombre: </label>
-                <input required type="text" class="form-control formReg" id="nombre" value="" name="nombre" method="get">
-                <label for="nombre">Género: </label>
-                <label class="radio-inline checkboxcss"><input type="radio" name="optradio" value=Masculino methond="get">Masculino</label>
-                <label class="radio-inline checkboxcss"><input type="radio" name="optradio" value=Femenino methond="get">Femenino</label>
+                <input required type="text" class="form-control formReg" id="nombre" value="" name="nombre">
+                <select class="form-control" id="Plantel" name="genero">
+                    <option>Masculino</option>
+                    <option>Femenino</option>
+                </select>
                 <div></div>
-                <label for="telefono">Teléfono</label>
+                <label for="telefono" name="telefono">Teléfono</label>
                 <input required type="text" class="form-control formReg" id="telefono" value="" name="telefono">
                 <label for="Plantel">Plantel</label>
-                <select class="form-control" id="Plantel">
+                <select class="form-control" id="Plantel" name="plantel">
                     <option>Instituto Tecnológico de Colima</option>
                     <option>Instituto Tecnológico de Ciudad Guzmán</option>
                     <option>Instituto Tecnológico de Ciudad Juárez</option>
@@ -47,7 +48,7 @@
             </div>
             <div class="form-group formGroupReg col-sm-6">
                 <label for="carrera">Carrera</label>
-                <select class="form-control" id="carrera">
+                <select class="form-control" id="carrera" name = "carrera">
                     <option>Arquitectura</option>
                     <option>Contador Publico</option>
                     <option>Ing. Ambiental</option>
@@ -60,7 +61,7 @@
                     <option>Lic. Administración</option>
                 </select>
                 <label for="semestre">Semestre</label>
-                <select class="form-control selectsmtr" id="semestre">
+                <select class="form-control selectsmtr" id="semestre" name="semestre">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -70,8 +71,8 @@
                     <option>7</option>
                     <option>9</option>
                 </select>
-                <label for="Email">Correo Electrónico</label>
-                <input required type="text" class="form-control formReg" id="Email" value="example@itcolima.edu.mx">
+                <label for="Email" name="correo">Correo Electrónico</label>
+                <input required type="text" class="form-control formReg" id="Email" value="example@itcolima.edu.mx" name="correo">
             </div>
             <div class="col-sm-12 text-center">
 
