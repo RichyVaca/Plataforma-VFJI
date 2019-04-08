@@ -22,41 +22,41 @@
             <div class="text-center">
                 <a class="textoMenu">Registro</a>
             </div>
-
     </div>
+    <form class="" action="RegistroUsuario.php" method="post">
     <div class="container-fluid row">
         <div class="form-group formGroupReg col-sm-6">
             <label for="nombre">Nombre: </label>
-            <input type="text" class="form-control formReg" id="nombre" value="Nombre Completo">
+            <input type="text" class="form-control formReg" id="nombre" value="Nombre Completo" name="nombre" method="post">
             <label for="telefono">Telefono</label>
-            <input type="text" class="form-control formReg" id="telefono" value="Ingresar Telefono">
+            <input type="text" class="form-control formReg" id="telefono" value="Ingresar Telefono" name="telefono" method="post">
             <label for="Plantel">Plantel</label>
-            <select class="form-control" id="Plantel">
+            <select class="form-control" id="Plantel" name="plantel" method="post">
                 <option>Instituto Tecnologico de Colima</option>
                 <option>Instituto Tecnologico de Ciudad Guzmán</option>
                 <option>Instituto Tecnologico de Ciudad Juárez</option>
                 <option>Instituto Tecnologico de Puebla</option>
             </select>
             <label for="especialidad">Carrera</label>
-            <input type="text" class="form-control formReg" id="especialidad" value="Ingresar Carrera">
+            <input type="text" class="form-control formReg" id="especialidad" value="Ingresar Carrera" name="carrera" method="post">
             <label for="psw">Contraseña</label>
-            <input type="password" class="form-control formReg" id="psw" placeholder="Ingresar Contraseña">
+            <input type="password" class="form-control formReg" id="psw" placeholder="Ingresar Contraseña" name="password" method="post">
         </div>
         <div class="form-group formGroupReg col-sm-6">
             <label for="CURP">CURP</label>
-            <input type="text" class="form-control formReg" id="CURP" value="Ingresar CURP">
+            <input type="text" class="form-control formReg" id="CURP" value="Ingresar CURP" name="curp" method="post">
             <label for="Email">Correo Electrónico</label>
-            <input type="text" class="form-control formReg" id="Email" value="example@correo.com">
+            <input type="text" class="form-control formReg" id="Email" value="example@correo.com" name="correo" method="post">
             <label for="Grado">Grado</label>
-            <select class="form-control" id="Grado">
+            <select class="form-control" id="Grado" name="grado" method="post">
                 <option>Licenciatura</option>
                 <option>Maestría</option>
                 <option>Doctorado</option>
             </select>
             <label for="l-inv">Línea de Investigación</label>
-            <input type="text" class="form-control formReg" id="l-inv" value="Ingresar Linea de Investigación">
+            <input type="text" class="form-control formReg" id="l-inv" value="Ingresar Linea de Investigación" name="Linv" method="post">
             <label for="psw">Repetir Contraseña</label>
-            <input type="password" class="form-control formReg" id="psw" placeholder="Ingresa nuevamente la contraseña">
+            <input type="password" class="form-control formReg" id="psw" placeholder="Ingresa nuevamente la contraseña" name="password2" method="post">
         </div>
         <div class="col-sm-12 text-center">
             <button onclick= type="button" class="btn btn-black btnreg text-center btn-success">Guardar</button>
@@ -64,7 +64,7 @@
         </div>
 
     </div>
-
+</form>
 
 </body>
 </html>
