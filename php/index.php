@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>VFJI</title>
    </head>
-   <link rel="stylesheet" href="css/estilo.css">
+   <link rel="stylesheet" href="../css/estilo.css">
 
 <body class="text-center">
     <div class="container-fluid"></div>
         <form action="" class="form-signing"></form>
-            <img class= "mb-4" src="img/logo-instituto-tecnologico-de-colima.png"
+            <img class= "mb-4" src="../img/logo-instituto-tecnologico-de-colima.png"
             alt="logo-instituto-tecnologico-de-colima" width = "100px" height= "100px">
 
             <h1 class="text-center">Plataforma VFJI</h1>
@@ -19,8 +19,8 @@
 
             <input class="form-control formlogin" type="text" name="Usuario" placeholder="Usuario" required autofocus></input>
             <input class="form-control formlogin" type="password" name="psw" placeholder="Contraseña" required autofocus></input>
-            <button onclick= location.href='Ventana_Menu.html' class="btn btn-block"  type="button">Iniciar Sesión</button>
-            <button onClick= location.href='Registro.html' class="btn btn-block" type="button">Registrarse</button>
+            <button onclick= location.href='../Ventana_Menu.html' class="btn btn-block"  type="button">Iniciar Sesión</button>
+            <button onclick= location.href='Registro.php' class="btn btn-block"  type="button">Registrarse</button>
         </form>
 </body>
 </html>
