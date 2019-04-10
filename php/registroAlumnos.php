@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Registro Alumnos - VFJI</title>
 </head>
 <link rel="stylesheet" href="../css/estilo.css">
 <link rel="php" href="../php/alumnos.php">
@@ -28,12 +28,14 @@
         <div class="container-fluid row">
             <div class="form-group formGroupReg col-sm-6">
                 <label for="CURP">CURP</label>
-                <input required type="text" class="form-control formReg" id="CURP" value="" name="curp">
+                <input required type="text" class="form-control formReg" id="CURP" value="" name="curp" minlength="18" maxlength="18">
                 <label for="nombre">Nombre: </label>
                 <input required type="text" class="form-control formReg" id="nombre" value="" name="nombre">
+                <label for="nombre">Genero: </label>
                 <select class="form-control" id="Plantel" name="genero">
-                    <option>Masculino</option>
-                    <option>Femenino</option>
+                    <option> </option>
+                    <option value = "1">Masculino</option>
+                    <option value = "2">Femenino</option>
                 </select>
                 <div></div>
                 <label for="telefono" name="telefono">Teléfono</label>
@@ -72,12 +74,12 @@
                     <option>9</option>
                 </select>
                 <label for="Email" name="correo">Correo Electrónico</label>
-                <input required type="text" class="form-control formReg" id="Email" value="example@itcolima.edu.mx" name="correo">
+                <input required type="text" class="form-control formReg" id="Email" value="@itcolima.edu.mx" name="correo">
             </div>
             <div class="col-sm-12 text-center">
 
             </div>
-                <input type="submit" src="../php/alumnos.php" class="btn btn-black btnreg text-center btn-success"/>
+                <button onclick=location.href="../php/alumnos.php" class="btn btn-black btnreg text-center btn-success">Guardar</button>
                 <button onclick= type="button" class="btn btn-black btnreg text-center">Editar</button>
                 <button onclick=location.href='Ventana_Menu.html' type="submit" class="btn btn-black btnreg text-center btn-warning">Cancelar</button>
             </div>
