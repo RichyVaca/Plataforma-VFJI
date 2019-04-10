@@ -17,11 +17,8 @@ if ($resultado) {
 }else{
   echo "No se ha podido registrar el proyecto";
 }
-<<<<<<< HEAD
 
 
 
-=======
->>>>>>> 3e247a897e0743cac59e272164aa95e70588716c
 
  ?>
