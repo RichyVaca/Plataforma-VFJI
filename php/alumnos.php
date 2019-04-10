@@ -1,5 +1,5 @@
 <?php
-  include("conexion.php");
+  //include("conexion.php");
 
   $CURP = $_POST['curp']; //listo
   $nombre = $_POST['nombre'];//listo
@@ -10,7 +10,8 @@
   $semestre = $_POST['semestre'];//listo
   $correo = $_POST['correo'];
 
-
+  echo $CURP." ".$nombre." ".$genero." ".$telefono." ".$plantel." ".$plantel." ".$carrera." ".$semestre." ".$correo
+  /*
   $query = "INSERT INTO alumnos(curp,nombre,telefono,correo,genero,plantel,carrera,semestre)
   VALUES ('$CURP','$nombre','$telefono','$correo','$genero','$plantel','$carrera','$semestre')";
   $resultado = $conexion -> query($query);
@@ -22,5 +23,5 @@
   }else{
     echo "No se ha podido registrar el proyecto";
   }
-
+  */
  ?>
