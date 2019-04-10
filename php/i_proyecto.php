@@ -1,19 +1,24 @@
 <?php
-  include("conexion.php");
+include("conexion.php");
 
-  $Titulo = $_Post['titulo'];
-  $Resumen = $_Post['resumen'];
-  $Requisitos = $_Post['req'];
-  $Integrantes = $_Post['noParticipantes'];
+$titulo= $_POST['titulo'];
+$resumen= $_POST['resumen'];
+$requisitos=$_POST['req'];
+$numero= $_POST['noParticipantes'];
 
-  $query = "INSERT INTO r_proyectos(Titulo,Resumen,Requisitos,Integrantes)"
-  VALUES ('$Titulo','$Resumen','$Requisitos','$Integrantes');
-  $resultado = $conexion -> query($query);
+$query = "INSERT INTO proyecto(titulo,resumen,requisitos,nalumno)
+VALUES ('$titulo','$resumen','$requisitos','$numero')";
+$resultado = $conexion -> query($query);
 
-  if ($resultado) {
-    header("Location: ../Proyectos.html");
-  }else{
-    echo "No se ha podido registrar el proyecto";
-  }
+if ($resultado) {
+  header("registroProyecto.php");
+  //Aqui va aviso de que se registro correctamente
+
+}else{
+  echo "No se ha podido registrar el proyecto";
+}
+
+
+
 
  ?>
