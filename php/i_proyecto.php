@@ -18,7 +18,4 @@ if ($resultado) {
   echo "No se ha podido registrar el proyecto";
 }
 
-
-
-
  ?>
