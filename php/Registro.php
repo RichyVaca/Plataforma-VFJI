@@ -39,7 +39,18 @@
                 <option>Instituto Tecnologico de Puebla</option>
             </select>
             <label for="especialidad">Carrera</label>
-            <input type="text" class="form-control formReg" id="especialidad" value="Ingresar Carrera" name="carrera">
+            <select class="form-control" id="carrera" name = "carrera">
+                <option>Arquitectura</option>
+                <option>Contador Publico</option>
+                <option>Ing. Ambiental</option>
+                <option>Ing. Bioquimica</option>
+                <option>Ing. Gestión Empresarial</option>
+                <option>Ing. Industrial</option>
+                <option>Ing. Informática</option>
+                <option>Ing. Mecatrónica</option>
+                <option>Ing. Sistemas Computacionales</option>
+                <option>Lic. Administración</option>
+            </select>
             <label for="psw">Contraseña</label>
             <input type="password" class="form-control formReg" id="psw" placeholder="Ingresar Contraseña" name="password">
         </div>
@@ -55,7 +66,13 @@
                 <option>Doctorado</option>
             </select>
             <label for="l-inv">Línea de Investigación</label>
-            <input type="text" class="form-control formReg" id="l-inv" value="Ingresar Linea de Investigación" name="Linv">
+            <select class="form-control" id="Plantel" name="Linv">
+                <option>Ineniería de Software</option>
+                <option>Tópicos de TI y Comunicación</option>
+                <option>Tecnología WEB</option>
+                <option>Optimización de procesos productivos</option>
+                <option>Innovación Mecatrónica</option>
+            </select>
             <label for="psw">Repetir Contraseña</label>
             <input type="password" class="form-control formReg" id="psw" placeholder="Ingresa nuevamente la contraseña" name="password2">
         </div>

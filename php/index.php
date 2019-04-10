@@ -10,7 +10,7 @@
 
 <body class="text-center">
     <div class="container-fluid"></div>
-        <form action="" class="form-signing"></form>
+        <form action="../Ventana_Menu.html" class="form-signing" method="post"></form>
             <img class= "mb-4" src="../img/logo-instituto-tecnologico-de-colima.png"
             alt="logo-instituto-tecnologico-de-colima" width = "100px" height= "100px">
 
@@ -19,7 +19,7 @@
 
             <input class="form-control formlogin" type="text" name="Usuario" placeholder="Usuario" required autofocus></input>
             <input class="form-control formlogin" type="password" name="psw" placeholder="Contraseña" required autofocus></input>
-            <button onclick= location.href='../Ventana_Menu.html' class="btn btn-block"  type="button">Iniciar Sesión</button>
+            <button class="btn btn-block"  type="submit">Iniciar Sesión</button>
             <button onclick= location.href='Registro.php' class="btn btn-block"  type="button">Registrarse</button>
         </form>
 </body>
