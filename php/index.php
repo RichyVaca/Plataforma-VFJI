@@ -19,7 +19,7 @@
 
             <input class="form-control formlogin" type="text" name="Usuario" placeholder="Usuario" required autofocus></input>
             <input class="form-control formlogin" type="password" name="psw" placeholder="Contraseña" required autofocus></input>
-            <button class="btn btn-block"  type="submit">Iniciar Sesión</button>
+            <button onclick= location.href='../Ventana_Menu.html' class="btn btn-block"  type="submit">Iniciar Sesión</button>
             <button onclick= location.href='Registro.php' class="btn btn-block"  type="button">Registrarse</button>
         </form>
 </body>
