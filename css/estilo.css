@@ -110,3 +110,15 @@ table, th, td{
 table th{
     background-color:orange;
 }
+
+#table_id_wrapper{
+	width: 100%;
+}
+#table_id_wrapper>tbody>tr,td,th{
+	border: 1px solid black;
+
+}
+
+#table_id_wrapper>tbody>tr:nth-child(even)>th{
+	background-color: red;
+}
