@@ -30,7 +30,8 @@
                 <label for="CURP">CURP</label>
                 <input required type="text" class="form-control formReg" id="CURP" value="" name="curp" minlength="18" maxlength="18">
                 <label for="nombre">Nombre: </label>
-                <input required type="text" class="form-control formReg" id="nombre" value="" name="nombre">
+                <input required type="text" class="form-control formReg" id="nombre" value="" name="nombre"
+                onpaste="return false">
                 <label for="nombre">Genero: </label>
                 <select class="form-control" id="Plantel" name="genero">
                     <option> </option>
@@ -39,7 +40,8 @@
                 </select>
                 <div></div>
                 <label for="telefono" name="telefono">Teléfono</label>
-                <input required type="text" class="form-control formReg" id="telefono" value="" name="telefono">
+                <input required type="text" class="form-control formReg" id="telefono" value="" name="telefono"
+                pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="solo números">
                 <label for="Plantel">Plantel</label>
                 <select class="form-control" id="Plantel" name="plantel">
                     <option>Instituto Tecnológico de Colima</option>
@@ -74,14 +76,15 @@
                     <option>9</option>
                 </select>
                 <label for="Email" name="correo">Correo Electrónico</label>
-                <input required type="text" class="form-control formReg" id="Email" value="@itcolima.edu.mx" name="correo">
+                <input required type="email" class="form-control formReg" id="Email" value="" name="correo"
+              >
             </div>
             <div class="col-sm-12 text-center">
 
             </div>
-                <button onclick=location.href="../php/alumnos.php" class="btn btn-black btnreg text-center btn-success">Guardar</button>
+                <button type= submit class="btn btn-black btnreg text-center btn-success">Guardar</button>
                 <button onclick= type="button" class="btn btn-black btnreg text-center">Editar</button>
-                <button onclick=location.href='Ventana_Menu.html' type="submit" class="btn btn-black btnreg text-center btn-warning">Cancelar</button>
+                <button onclick=location.href='../Ventana_Menu.html' type="submit" class="btn btn-black btnreg text-center btn-warning">Cancelar</button>
             </div>
         </form>
 

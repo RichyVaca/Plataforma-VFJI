@@ -7,7 +7,7 @@ $carrera= $_POST['carrera'];
 $correo= $_POST['correo'];
 $linea = $_POST['linea'];
 
-echo $curp . $nombre . $telefono . $carrera . $correo . $linea;
+echo $curp . $nombre . $telefono . $carrera . $correo . $linea
 
 
  ?>

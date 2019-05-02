@@ -47,8 +47,7 @@
             <div class="form-group formGroupReg col-sm-6">
                 <label for="CURP">CURP</label>
                 <input required type="text" class="form-control formReg" id="CURP" value="" name="curp" minlength="18" maxlength="18"
-               pattern="([A-Z]{4}([0-9]{2})(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])[HM](AS|BC|BS|CC|CL|CM|CS|CH|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)[A-Z]{3}[0-9A-Z]\d)">
-                <label for="Email">Correo Electrónico</label>
+               
                 <input required type="email" class="form-control formReg" id="Email" value="" name="correo">
                 <label for="Grado">Grado</label>
                 <select class="form-control" id="Grado">
@@ -60,9 +59,9 @@
                 <input  required type="text" class="form-control formReg" id="l-inv" value="" name="linea">
             </div>
             <div class="col-sm-12 text-center">
-                <button type=submit class="btn btn-black btnreg text-center btn-success">Guardar</button>
+                <button type=submit class="btn btn-black btnreg text-center btn-success" location.href='registroAsesor.php' >Guardar</button>
                 <button onclick= type="button" class="btn btn-black btnreg text-center">Editar</button>
-                <button onclick=location.href='Ventana_Menu.html' type="button" class="btn btn-black btnreg text-center btn-warning">Cancelar</button>
+                <button onclick=location.href='../Ventana_Menu.html' type="button" class="btn btn-black btnreg text-center btn-warning">Cancelar</button>
             </div>
 
 
