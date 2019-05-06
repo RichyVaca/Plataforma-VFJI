@@ -10,8 +10,8 @@
   $semestre = $_POST['semestre'];//listo
   $correo = $_POST['correo'];
 
-  echo $CURP." ".$nombre." ".$genero." ".$telefono." ".$plantel." ".$plantel." ".$carrera." ".$semestre." ".$correo
-  /*
+  //echo $CURP." ".$nombre." ".$genero." ".$telefono." ".$plantel." ".$plantel." ".$carrera." ".$semestre." ".$correo
+  
   $query = "INSERT INTO alumnos(curp,nombre,telefono,correo,genero,plantel,carrera,semestre)
   VALUES ('$CURP','$nombre','$telefono','$correo','$genero','$plantel','$carrera','$semestre')";
   $resultado = $conexion -> query($query);
@@ -23,5 +23,5 @@
   }else{
     echo "No se ha podido registrar el proyecto";
   }
-  */
+  
  ?>
