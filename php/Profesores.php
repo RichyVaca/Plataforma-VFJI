@@ -37,14 +37,18 @@
                     <table id="table_id" class="display">
                         <thead>
                             <tr>
-                                <th>No.</th>
-                                <th>Nombre Profesor</th>
-                            <th>Número de Proyectos</th>
-                            <th>Carrera</th>
+                              <th>No.</th>
+                              <th>Nombre Profesor</th>
+                              <th>Número de Proyectos</th>
+                              <th>Carrera</th>
                             </tr>
                         </thead>
                        <tbody>
-                           <!-- aqui se pone el php -->
+                           <?php
+                           //Conexión con la DB
+                           //Preguntarle a Zúñiga como hacer la consulta
+                           //Aquí se genera la consulta
+                            ?>
                            <tr>
                                <td></td>
                                <td></td>
@@ -53,6 +57,7 @@
                            </tr>
                            <!-- <?php
                             }
+                            //Aquí solo es el corchete o llave que cierra el while (Pregruntar a Zúñiga)
                             ?> -->
                        </tbody>
                     </table>

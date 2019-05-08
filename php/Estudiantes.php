@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.4.0.min.js"></script>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <script type="text/javascript" src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js">
+
+    </script>
     <title>Document</title>
 </head>
 <body>
@@ -28,12 +33,10 @@
         <div class="container-fluid">
                 <div class="text-center">
                     <div class="col-sm-12">
-                        <table class="table-hover" style="margin:0 auto;">
-                            <tr>
-                                <td colspan="4"></td>
-                                <th colspan="2">Cursos</th>
-                            </tr>
-                            <tr>
+                        <table id="table_id" class="display">
+                            </thead>
+                            <thead>
+                              <tr>
                                 <th>No.</th>
                                 <th>No. Control</th>
                                 <th>Nombre Alumno</th>
@@ -42,8 +45,15 @@
                                 <th>Redacción</th>
                                 <th>Artículo</th>
                                 <th>Cartel</th>
-                            </tr>
-                            <tr>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <?php
+                              //Conexión con la DB
+                              //Preguntarle a Zúñiga como hacer la consulta
+                              //Aquí se genera la consulta
+                               ?>
+                              <tr>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -52,20 +62,20 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                            </tr>
-                            <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
+                              </tr>
+                              <?php
+                              // }
+                              //Aquí solo es el corchete o llave que cierra el while (Pregruntar a Zúñiga)
+                               ?>
+                            </tbody>
                         </table>
                     </div>
                 </div>
             </div>
 </body>
+<script type="text/javascript">
+    $(document).ready( function () {
+        $('#table_id').DataTable();
+    } );
+    </script>
 </html>
