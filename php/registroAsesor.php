@@ -29,10 +29,7 @@
         <div class="container-fluid row">
             <div class="form-group formGroupReg col-sm-6">
                 <label for="nombre">Nombre: </label>
-                <input required type="text" class="form-control formReg" id="nombre" value="" name="nombre"
-                pattern="([A-Z]{4}([0-9]{2})(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])[HM](AS|BC|BS|CC|CL|CM|CS|CH|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)[A-Z]{3}[0-9A-Z]\d)">
-               <label for="nombre">Nombre: </label>
-                onpaste="return false">
+                <input required type="text" class="form-control formReg" id="nombre" value="" name="nombre" onpaste="return false">
                 <label for="telefono">Teléfono</label>
                 <input required type="text" class="form-control formReg" id="telefono" value="" name="telefono"
                 pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="solo números">
@@ -49,7 +46,9 @@
             <div class="form-group formGroupReg col-sm-6">
                 <label for="CURP">CURP</label>
                 <input required type="text" class="form-control formReg" id="CURP" value="" name="curp" minlength="18" maxlength="18"
+                pattern="([A-Z]{4}([0-9]{2})(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])[HM](AS|BC|BS|CC|CL|CM|CS|CH|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)[A-Z]{3}[0-9A-Z]\d)">
 
+                  <label for="correo">Correo</label>
                 <input required type="email" class="form-control formReg" id="Email" value="" name="correo">
                 <label for="Grado">Grado</label>
                 <select class="form-control" id="Grado">
