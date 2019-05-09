@@ -12,7 +12,7 @@
     <title>Document</title>
 </head>
 <body>
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="../css/estilo.css">
 <body>
 <!--Barra-->
 <div class="container-fluid">

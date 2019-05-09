@@ -17,7 +17,7 @@
                 VFJI</img>
             </a>
             <form action="form-inline">
-                <button onclick=location.href='index.php' class="btn btn-secondary my-2 my-sm-0 btnsalir btn-warning" type="button">Salir</button>
+                <button onclick=location.href='https://itcolima.edu.mx/siitec2/index.php/usuarios' class="btn btn-secondary my-2 my-sm-0 btnsalir btn-warning" type="button">Salir</button>
             </form>
             </nav>
             <div class="text-center">
