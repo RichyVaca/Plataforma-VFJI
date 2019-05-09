@@ -17,7 +17,7 @@
                 VFJI</img>
             </a>
             <form action="form-inline">
-                <button onclick=location.href='index.php' class="btn btn-secondary my-2 my-sm-0 btnsalir btn-warning" type="button">Salir</button>
+                <button onclick=location.href='https://itcolima.edu.mx/siitec2/index.php/usuarios' class="btn btn-secondary my-2 my-sm-0 btnsalir btn-warning" type="button">Salir</button>
             </form>
             </nav>
             <div class="text-center">
@@ -27,10 +27,11 @@
     <form name="" action="../php/RegistroUsuario.php" method="POST">
     <div class="container-fluid row">
         <div class="form-group formGroupReg col-sm-6">
-            <label for="nombre">Nombre: </label>
-            <input type="text" class="form-control formReg" id="nombre" value="Nombre Completo" name="nombre">
-            <label for="telefono">Telefono</label>
-            <input type="text" class="form-control formReg" id="telefono" value="Ingresar Telefono" name="telefono">
+          <label for="nombre">Nombre: </label>
+          <input required type="text" class="form-control formReg" id="nombre" value="" name="nombre" onpaste="return false">
+          <label for="telefono">Teléfono</label>
+          <input required type="text" class="form-control formReg" id="telefono" value="" name="telefono"
+          pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="solo números">
             <label for="Plantel">Plantel</label>
             <select class="form-control" id="Plantel" name="plantel">
                 <option>Instituto Tecnologico de Colima</option>
@@ -51,14 +52,13 @@
                 <option>Ing. Sistemas Computacionales</option>
                 <option>Lic. Administración</option>
             </select>
-            <label for="psw">Contraseña</label>
-            <input type="password" class="form-control formReg" id="psw" placeholder="Ingresar Contraseña" name="password">
         </div>
         <div class="form-group formGroupReg col-sm-6">
-            <label for="CURP">CURP</label>
-            <input type="text" class="form-control formReg" id="CURP" value="Ingresar CURP" name="curp">
-            <label for="Email">Correo Electrónico</label>
-            <input type="text" class="form-control formReg" id="Email" value="example@correo.com" name="correo">
+          <label for="CURP">CURP</label>
+          <input required type="text" class="form-control formReg" id="CURP" value="" name="curp" minlength="18" maxlength="18"
+          pattern="([A-Z]{4}([0-9]{2})(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])[HM](AS|BC|BS|CC|CL|CM|CS|CH|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)[A-Z]{3}[0-9A-Z]\d)">
+          <label for="correo">Correo Electronico</label>
+        <input required type="email" class="form-control formReg" id="Email" value="" name="correo">
             <label for="Grado">Grado</label>
             <select class="form-control" id="Grado" name="grado">
                 <option>Licenciatura</option>
@@ -73,13 +73,11 @@
                 <option>Optimización de procesos productivos</option>
                 <option>Innovación Mecatrónica</option>
             </select>
-            <label for="psw">Repetir Contraseña</label>
-            <input type="password" class="form-control formReg" id="psw" placeholder="Ingresa nuevamente la contraseña" name="password2">
         </div>
         <div class="col-sm-12 text-center">
           <input type="submit" src="../php/RegistroUsuario.php" class="btn btn-black btnreg text-center btn-success"/>
             <!-- <button onclick= type="button" class="btn btn-black btnreg text-center btn-success">Guardar</button> -->
-            <button onclick=location.href='index.php' type="button" class="btn btn-black btnreg text-center btn-warning">Cancelar</button>
+            <button onclick=location.href='../Ventana_Menu.html' type="button" class="btn btn-black btnreg text-center btn-warning">Cancelar</button>
         </div>
 
     </div>
