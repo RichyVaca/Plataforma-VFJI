@@ -18,7 +18,7 @@
 <div class="container-fluid">
     <nav class="navbar navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
-            <img src="img/logoTec.png" width="40" height="40" class="d-inline-block align-top logoTec" alt="">
+            <img src="../img/logoTec.png" width="40" height="40" class="d-inline-block align-top logoTec" alt="">
             VFJI</img>
         </a>
         <form action="form-inline">
