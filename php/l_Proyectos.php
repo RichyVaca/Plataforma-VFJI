@@ -88,14 +88,14 @@
 
 <!-- Inicio de PHP -->
 <?php
-  $id
-  $nProyecto
-  $asesor1
-  $asesor2
-  $part1
-  $part2
-  $part3
-  $carrera
+  // $id
+  // $nProyecto
+  // $asesor1
+  // $asesor2
+  // $part1
+  // $part2
+  // $part3
+  // $carrera
 
 
  ?>

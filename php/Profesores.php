@@ -56,7 +56,7 @@
                                <td></td>
                            </tr>
                            <?php
-                            }
+                            // }
                             //Aquí solo es el corchete o llave que cierra el while (Pregruntar a Zúñiga)
                             ?>
                        </tbody>
