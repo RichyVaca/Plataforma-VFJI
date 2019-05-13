@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,17 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="../css/estilo.css">
 <body>
 <!--Barra-->
 <div class="container-fluid">
     <nav class="navbar navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
-            <img src="img/logoTec.png" width="40" height="40" class="d-inline-block align-top logoTec" alt="">
+            <img src="../img/logoTec.png" width="40" height="40" class="d-inline-block align-top logoTec" alt="">
             VFJI</img>
         </a>
         <form action="form-inline">
-            <button onclick=location.href='Reportes.html' class="btn-warning btn btn-secondary my-2 my-sm-0 btnsalir" type="button">Regresar</button>
+            <button onclick=location.href='../Reportes.html' class="btn-warning btn btn-secondary my-2 my-sm-0 btnsalir" type="button">Regresar</button>
             <button onclick=location.href='https://itcolima.edu.mx/siitec2/index.php/usuarios' class="btn-warning btn btn-secondary my-2 my-sm-0 btnsalir" type="button">Salir</button>
         </form>
         </nav>
