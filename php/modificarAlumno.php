@@ -21,17 +21,21 @@
             </form>
             </nav>
             <div class="text-center">
-                <a class="textoMenu">Registro Alumno</a>
+                <a class="textoMenu">Modificación Alumno</a>
             </div>
     </div>
     <form name="formulario" action="../php/alumnos.php" method="POST">
         <div class="container-fluid row">
             <div class="form-group formGroupReg col-sm-6">
                 <label for="CURP">CURP</label>
-                <input required type="text" class="form-control formReg" id="CURP" value="" name="curp" minlength="18" maxlength="18"
-                pattern="([A-Z]{4}([0-9]{2})(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])[HM](AS|BC|BS|CC|CL|CM|CS|CH|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)[A-Z]{3}[0-9A-Z]\d)">
+                <select class="form-control" id="curp" name="curp">
+                    <option>Seleccione la CURP</option>
+                    <option>ROGC981016HCMDRR06</option>
+                    <option>ROGC981016HCMDRR07</option>
+                    <option>ROGC981016HCMDRR08</option>
+                    <option>ROGC981016HCMDRR09</option>
+                </select>
                  <label for="nombre">Nombre: </label>
-                <label for="nombre">Nombre: </label>
                 <input required type="text" class="form-control formReg" id="nombre" value="" name="nombre"
                 onpaste="return false">
                 <label for="nombre">Genero: </label>
