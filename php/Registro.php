@@ -66,7 +66,7 @@
                 <option>Doctorado</option>
             </select>
             <label for="l-inv">Línea de Investigación</label>
-            <select class="form-control" id="Plantel" name="linea">
+            <select class="form-control" id="Plantel" name="linea2">
                 <option>Ineniería de Software</option>
                 <option>Tópicos de TI y Comunicación</option>
                 <option>Tecnología WEB</option>

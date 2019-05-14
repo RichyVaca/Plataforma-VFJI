@@ -7,11 +7,11 @@
   $carrera = $_POST['carrera'];
   $curp = $_POST['curp'];
   $correo = $_POST['correo'];
-  $Linv = $_POST['Linv'];
+  $line2= $_POST['linea2'];
   $grado = $_POST['grado'];
 
   $query = "INSERT INTO asesor(curp,nombre,telefono,carrera,correo,linea,grado,plantel)
-  VALUES ('$curp','$nombre','$telefono','$carrera','$correo','$Linv','$grado','$plantel')";
+  VALUES ('$curp','$nombre','$telefono','$carrera','$correo','$linea2','$grado','$plantel')";
   $resultado = $conexion -> query($query);
 
   if ($resultado) {

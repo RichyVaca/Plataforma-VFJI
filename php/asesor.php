@@ -5,7 +5,7 @@ $nombre= $_POST['nombre'];
 $telefono=$_POST['telefono'];
 $carrera= $_POST['carrera'];
 $correo= $_POST['correo'];
-$linea = $_POST['linea'];
+$linea2 = $_POST['linea2'];
 $grado= $_POST['grado'];
 $plantel =$_POST['plantel'];
 
@@ -13,7 +13,7 @@ $plantel =$_POST['plantel'];
 //echo $curp . $nombre . $telefono . $carrera . $correo . $linea
 
 $query = "INSERT INTO asesor(curp,nombre,telefono,carrera,correo,linea,grado,plantel)
-VALUES ('$curp','$nombre','$telefono','$carrera','$correo','$linea','$grado','$plantel')";
+VALUES ('$curp','$nombre','$telefono','$carrera','$correo','$linea2a','$grado','$plantel')";
 $resultado = $conexion -> query($query);
 
 if ($resultado) {
