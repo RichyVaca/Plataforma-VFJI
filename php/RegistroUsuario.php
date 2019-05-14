@@ -1,19 +1,17 @@
 <?php
   include("conexion.php");
 
-  $nombre = $_POST['nombre'];//
-  $telefono = $_POST['telefono'];//
+  $nombre = $_POST['nombre'];
+  $telefono = $_POST['telefono'];
   $plantel = $_POST['plantel'];
-  $carrera = $_POST['carrera'];//
-  $password = $_POST['password'];
-  $curp = $_POST['curp'];//
-  $correo = $_POST['correo'];//
-  $Linv = $_POST['Linv'];//
-  $password2 = $_POST['password2'];
+  $carrera = $_POST['carrera'];
+  $curp = $_POST['curp'];
+  $correo = $_POST['correo'];
+  $Linv = $_POST['Linv'];
   $grado = $_POST['grado'];
 
-  $query = "INSERT INTO asesor(curp,nombre,telefono,carrera,correo,linea,plantel,grado,password,password2)
-  VALUES ('$curp','$nombre','$telefono','$carrera','$correo','$Linv','$plantel','$grado','$password','$password2')";
+  $query = "INSERT INTO asesor(curp,nombre,telefono,carrera,correo,linea,grado,plantel)
+  VALUES ('$curp','$nombre','$telefono','$carrera','$correo','$Linv','$grado','$plantel')";
   $resultado = $conexion -> query($query);
 
   if ($resultado) {

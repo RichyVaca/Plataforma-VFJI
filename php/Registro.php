@@ -24,7 +24,7 @@
                 <a class="textoMenu">Registro</a>
             </div>
     </div>
-    <form name="" action="../php/RegistroUsuario.php" method="POST">
+    <form name="" action="../php/asesor.php" method="POST">
     <div class="container-fluid row">
         <div class="form-group formGroupReg col-sm-6">
           <label for="nombre">Nombre: </label>
@@ -66,7 +66,7 @@
                 <option>Doctorado</option>
             </select>
             <label for="l-inv">Línea de Investigación</label>
-            <select class="form-control" id="Plantel" name="Linv">
+            <select class="form-control" id="Plantel" name="linea">
                 <option>Ineniería de Software</option>
                 <option>Tópicos de TI y Comunicación</option>
                 <option>Tecnología WEB</option>
@@ -75,7 +75,7 @@
             </select>
         </div>
         <div class="col-sm-12 text-center">
-          <input type="submit" src="../php/RegistroUsuario.php" class="btn btn-black btnreg text-center btn-success"/>
+          <input type="submit"  class="btn btn-black btnreg text-center btn-success"/>
             <!-- <button onclick= type="button" class="btn btn-black btnreg text-center btn-success">Guardar</button> -->
             <button onclick=location.href='../Ventana_Menu.html' type="button" class="btn btn-black btnreg text-center btn-warning">Cancelar</button>
         </div>

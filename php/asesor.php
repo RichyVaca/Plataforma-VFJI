@@ -6,15 +6,18 @@ $telefono=$_POST['telefono'];
 $carrera= $_POST['carrera'];
 $correo= $_POST['correo'];
 $linea = $_POST['linea'];
+$grado= $_POST['grado'];
+$plantel =$_POST['plantel'];
+
 
 //echo $curp . $nombre . $telefono . $carrera . $correo . $linea
 
-$query = "INSERT INTO alumnos(curp,nombre,telefono,correo,genero,plantel,carrera,semestre)
-VALUES ('$CURP','$nombre','$telefono','$correo','$genero','$plantel','$carrera','$semestre')";
+$query = "INSERT INTO asesor(curp,nombre,telefono,carrera,correo,linea,grado,plantel)
+VALUES ('$curp','$nombre','$telefono','$carrera','$correo','$linea','$grado','$plantel')";
 $resultado = $conexion -> query($query);
 
 if ($resultado) {
-  header("registroAlumnos.php");
+  header("Registro.php");
   //Aqui va aviso de que se registro correctamente
 
 }else{
