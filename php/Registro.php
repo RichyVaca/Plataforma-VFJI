@@ -24,7 +24,7 @@
                 <a class="textoMenu">Registro</a>
             </div>
     </div>
-    <form name="" action="../php/asesor.php" method="POST">
+    <form name="" action="../php/RegistroUsuario.php" method="POST">
     <div class="container-fluid row">
         <div class="form-group formGroupReg col-sm-6">
           <label for="nombre">Nombre: </label>
@@ -66,7 +66,7 @@
                 <option>Doctorado</option>
             </select>
             <label for="l-inv">Línea de Investigación</label>
-            <select class="form-control" id="Plantel" name="linea2">
+            <select class="form-control" id="Plantel" name="lineaI">
                 <option>Ineniería de Software</option>
                 <option>Tópicos de TI y Comunicación</option>
                 <option>Tecnología WEB</option>
