@@ -27,14 +27,14 @@
     <div class="container-fluid row">
         <div class="form-group formGroupReg col-sm-12">
             <label for="titulo">Título del proyecto: </label>
-            <input type="text" class="form-control" name="titulo">
+            <input type="text" class="form-control" name="Titulo">
             <label for="resumen">Resumen:</label>
-            <textarea class="form-control" rows="4" name="resumen" maxlength="250"></textarea>
+            <textarea class="form-control" rows="4" name="Resumen" maxlength="250"></textarea>
             <label class="labelCont" for="cont">Cantidad de caracteres: 0</label>
             <label for="req">Requisitos:</label>
-            <textarea class="form-control" rows="4" name="req" maxlength="250"></textarea>
+            <textarea class="form-control" rows="4" name="Requisitos" maxlength="250"></textarea>
             <label for="noParticipantes">Número Máximo de Participantes</label>
-            <input type="number" class="form-control formPart" name="noParticipantes"  pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="solo números">
+            <input type="number" class="form-control formPart" name="Integrantes"  pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="solo números">
             <div class="text-right">
                     <input type="submit" src="../php/i_proyecto.php" class="btn btn-black btnreg text-center btn-success" value="Guardar"/>
                     <button onclick=location.href='../opciones_proyecto.html' type="button" class="btn btn-black btnreg text-center btn-warning">Cancelar</button>

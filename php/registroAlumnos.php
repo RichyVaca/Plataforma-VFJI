@@ -24,33 +24,30 @@
                 <a class="textoMenu">Registro Alumno</a>
             </div>
     </div>
-    <form name="formulario" action="../php/alumnos.php" method="POST">
+    <form name="formulario" action="../php/alumnos1.php" method="POST">
         <div class="container-fluid row">
             <div class="form-group formGroupReg col-sm-6">
-                <label for="CURP">CURP</label>
+                <label for="CURP">CURP:</label>
                 <input required type="text" class="form-control formReg" id="CURP" value="" name="curp" minlength="18" maxlength="18"
                 pattern="([A-Z]{4}([0-9]{2})(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])[HM](AS|BC|BS|CC|CL|CM|CS|CH|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)[A-Z]{3}[0-9A-Z]\d)">
+                <label for="nombre">Numero de control: </label>
+                <input required type="text" class="form-control formReg" id="nombre" value="" name="numeroco"
+                onpaste="return false">
                  <label for="nombre">Nombre: </label>
-                <label for="nombre">Nombre: </label>
                 <input required type="text" class="form-control formReg" id="nombre" value="" name="nombre"
                 onpaste="return false">
-                <label for="nombre">Genero: </label>
-                <select class="form-control" id="Plantel" name="genero">
-                    <option> </option>
-                    <option value = "1">Masculino</option>
-                    <option value = "2">Femenino</option>
+                <label for="nombre">Primer Apellido: </label>
+               <input required type="text" class="form-control formReg" id="nombre" value="" name="primerA"
+               onpaste="return false">
+               <label for="nombre">Segundo Apellido: </label>
+              <input required type="text" class="form-control formReg" id="nombre" value="" name="segundoA"
+              onpaste="return false">
+                <label for="carrera">Genero: </label>
+                <select class="form-control" id="carrera" name="genero">
+                    <option value="1">Masculino</option>
+                    <option value="2">Femenino</option>
                 </select>
                 <div></div>
-                <label for="telefono" name="telefono">Teléfono</label>
-                <input required type="text" class="form-control formReg" id="telefono" value="" name="telefono"
-                pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="solo números">
-                <label for="Plantel">Plantel</label>
-                <select class="form-control" id="Plantel" name="plantel">
-                    <option>Instituto Tecnológico de Colima</option>
-                    <option>Instituto Tecnológico de Ciudad Guzmán</option>
-                    <option>Instituto Tecnológico de Ciudad Juárez</option>
-                    <option>Instituto Tecnológico de Puebla</option>
-                </select>
             </div>
             <div class="form-group formGroupReg col-sm-6">
                 <label for="carrera">Carrera</label>
@@ -78,8 +75,17 @@
                     <option>9</option>
                 </select>
                 <label for="Email" name="correo">Correo Electrónico</label>
-                <input required type="email" class="form-control formReg" id="Email" value="" name="correo"
-              >
+                <input required type="email" class="form-control formReg" id="Email" value="" name="correo">
+                <label for="telefono" name="telefono">Teléfono</label>
+                <input required type="text" class="form-control formReg" id="telefono" value="" name="telefono"
+                pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="solo números">
+                <label for="Plantel">Plantel</label>
+                <select class="form-control" id="Plantel" name="plantel">
+                    <option>Instituto Tecnológico de Colima</option>
+                    <option>Instituto Tecnológico de Ciudad Guzmán</option>
+                    <option>Instituto Tecnológico de Ciudad Juárez</option>
+                    <option>Instituto Tecnológico de Puebla</option>
+                </select>
             </div>
             <div class="col-sm-12 text-center">
 

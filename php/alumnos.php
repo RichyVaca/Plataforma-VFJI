@@ -4,16 +4,19 @@
   $CURP = $_POST['curp']; //listo
   $nombre = $_POST['nombre'];//listo
   $genero = $_POST['genero'];//listo
+  $numeroco = $_POST['numeroco'];
+  $primerA = $_POST['primerA'];
+  $segundoA = $_POST['segundoA'];
   $telefono = $_POST['telefono'];//listo
   $plantel = $_POST['plantel']; //listo
   $carrera = $_POST['carrera'];//listo
   $semestre = $_POST['semestre'];//listo
   $correo = $_POST['correo'];
 
-  //echo $CURP." ".$nombre." ".$genero." ".$telefono." ".$plantel." ".$plantel." ".$carrera." ".$semestre." ".$correo
+  //echo $numeroco." ".$CURP." ".$nombre." ".$primerA." ".$segundoA." ".$genero." ".$telefono." ".$plantel." ".$semestre." ".$correo." ".$carrera
 
-  $query = "INSERT INTO alumnos(curp,nombre,telefono,correo,genero,plantel,carrera,semestre)
-  VALUES ('$CURP','$nombre','$telefono','$correo','$genero','$plantel','$carrera','$semestre')";
+ $query = "INSERT INTO alumnos(NoControl,CURP,Nombre,PrimerApellido,SegundoApellido,Genero,Telefono,Plantel,Semestre,Correo,Carrera)
+  VALUES ('$numeroco','$CURP','$nombre','$primerA','$segundoA',$genero,'$telefono','$plantel','$semestre','$correo','$carrera')";
   $resultado = $conexion -> query($query);
 
   if ($resultado) {
@@ -23,5 +26,6 @@
   }else{
     echo "No se ha podido registrar el proyecto";
   }
+
 
  ?>

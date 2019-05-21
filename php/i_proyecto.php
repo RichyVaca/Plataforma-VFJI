@@ -1,12 +1,12 @@
 <?php
 include("conexion.php");
 
-$titulo= $_POST['titulo'];
-$resumen= $_POST['resumen'];
-$requisitos=$_POST['req'];
-$numero= $_POST['noParticipantes'];
+$titulo= $_POST['Titulo'];
+$resumen= $_POST['Resumen'];
+$requisitos=$_POST['Requisitos'];
+$numero= $_POST['Integrantes'];
 
-$query = "INSERT INTO proyecto(titulo,resumen,requisitos,nalumno)
+$query = "INSERT INTO proyectos(Titulo,Resumen,Requisitos,Integrantes)
 VALUES ('$titulo','$resumen','$requisitos','$numero')";
 $resultado = $conexion -> query($query);
 
