@@ -23,7 +23,7 @@
                 <a class="textoMenu">Registro Proyecto</a>
             </div>
     </div>
-    <form name="formulario" action="../php/i_proyecto.php" method="POST">
+    <form name="formulario" action="../php/i_proyecto.php  <?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
     <div class="container-fluid row">
         <div class="form-group formGroupReg col-sm-12">
             <label for="titulo">Título del proyecto: </label>
@@ -42,6 +42,9 @@
         </div>
       </div>
       </form>
+
+      <script src="bootstrap/js/jquery-1.8.3.min.js"></script>
+       <script src="bootstrap/js/bootstrap.min.js"></script>
 
 </body>
 </html>
