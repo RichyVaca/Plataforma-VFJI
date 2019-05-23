@@ -4,16 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script>
-        function validacionProyecto(){
-            alert("Datos registrados con éxito");
-            document.getElementById("formulario").reset();
-            return false;
-            
-        }
-        
-    </script>
+    <title>VFJI</title>
 </head>
 <link rel="stylesheet" href="../css/estilo.css">
 <link rel="php" href="../php/i_proyecto.php">
@@ -45,8 +36,8 @@
             <label for="noParticipantes">Número Máximo de Participantes</label>
             <input require type="number" class="form-control formPart" name="Integrantes"  pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="solo números">
             <div class="text-right">
-                    <input type="submit" action="../php/i_proyecto.php" class="btn btn-black btnreg text-center btn-success" 
-                    value="Guardar" onsubmit="return validacionProyecto()"/>
+                    <input type="submit" action="../php/i_proyecto.php" onclick=location.href='registroProyecto.php' class="btn btn-black btnreg text-center btn-success" 
+                    value="Guardar"/>
                     <button onclick=location.href='../opciones_proyecto.html' type="button" 
                     class="btn btn-black btnreg text-center btn-warning">Cancelar</button>
             </div>
