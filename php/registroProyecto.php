@@ -10,9 +10,9 @@
             alert("Datos registrados con éxito");
             document.getElementById("formulario").reset();
             return false;
-            
+
         }
-        
+
     </script>
 </head>
 <link rel="stylesheet" href="../css/estilo.css">
@@ -45,17 +45,18 @@
             <label for="noParticipantes">Número Máximo de Participantes</label>
             <input require type="number" class="form-control formPart" name="Integrantes"  pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="solo números">
             <div class="text-right">
-                    <input type="submit" action="../php/i_proyecto.php" class="btn btn-black btnreg text-center btn-success" 
+                    <input type="submit" action="../php/i_proyecto.php" class="btn btn-black btnreg text-center btn-success"
                     value="Guardar" onsubmit="return validacionProyecto()"/>
-                    <button onclick=location.href='../opciones_proyecto.html' type="button" 
+                    <button onclick=location.href='../opciones_proyecto.html' type="button"
                     class="btn btn-black btnreg text-center btn-warning">Cancelar</button>
             </div>
         </div>
       </div>
       </form>
 
+
       <script src="bootstrap/js/jquery-1.8.3.min.js"></script>
-       <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
 </body>
 </html>
