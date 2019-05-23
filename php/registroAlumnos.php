@@ -87,11 +87,16 @@
                     <option>Instituto Tecnológico de Puebla</option>
                 </select>
             </div>
-            <div class="text-right col-sm-12">
-                <input type="submit" action="alumnos.php"  class="btn btn-black btnreg text-center btn-success" 
-                    value="Guardar"/>  
+            <div class="col-sm-12 text-center">
+
+            </div>
+                <button type= submit class="btn btn-black btnreg text-center btn-success">Guardar</button>
                 <button onclick=location.href='../submenu_alumno.html' type="submit" class="btn btn-black btnreg text-center btn-warning">Cancelar</button>
             </div>
         </form>
+        <script src="bootstrap/js/jquery-1.8.3.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
 </body>
 </html>

@@ -25,6 +25,4 @@ if ($resultado) {
 
 
 
-
-
  ?>

@@ -21,12 +21,16 @@
 
   if ($resultado) {
     echo '<script>alert("REGISTRO GUARDADO")</script> ';
-    header("registroAlumnos.php");
-    //Aqui va aviso de que se registro correctamente
+    header("registroProyecto.php");
+
     echo "<script>location.href='registroAlumnos.php'</script>";
+    //Aqui va aviso de que se registro correctamente
+
   }else{
-    echo "No se ha podido registrar el proyecto";
+    echo "Error en la conexion";
+    echo "<script>location.href='registroAlumnos.php'</script>";
   }
+
 
 
  ?>

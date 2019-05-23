@@ -21,7 +21,7 @@
             </form>
             </nav>
             <div class="text-center">
-                <a class="textoMenu">Registro</a>
+                <a class="textoMenu">Registro Asesor</a>
             </div>
     </div>
     <form name="" action="../php/RegistroUsuario.php" method="POST">
@@ -30,9 +30,9 @@
           <label for="nombre">Nombre: </label>
           <input required type="text" class="form-control formReg" id="nombre" value="" name="nombre" onpaste="return false">
           <label for="nombre">Primer Apellido: </label>
-            <input required type="text" class="form-control formReg" id="primerA" value="" name="primerA" onpaste="return false">
-            <label for="nombre">Segundo Apellido: </label>
-            <input required type="text" class="form-control formReg" id="segundoA" value="" name="SegundoA" onpaste="return false">
+          <input required type="text" class="form-control formReg" id="nombre" value="" name="nombre" onpaste="return false">
+          <label for="nombre">Segundo Apellido: </label>
+          <input required type="text" class="form-control formReg" id="nombre" value="" name="nombre" onpaste="return false">
           <label for="telefono">Teléfono</label>
           <input required type="text" class="form-control formReg" id="telefono" value="" name="telefono"
           pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="solo números">
@@ -43,21 +43,21 @@
                 <option>Instituto Tecnologico de Ciudad Juárez</option>
                 <option>Instituto Tecnologico de Puebla</option>
             </select>
-            <label for="especialidad">Carrera</label>
-            <select class="form-control" id="carrera" name = "carrera">
-                <option>Arquitectura</option>
-                <option>Contador Publico</option>
-                <option>Ing. Ambiental</option>
-                <option>Ing. Bioquimica</option>
-                <option>Ing. Gestión Empresarial</option>
-                <option>Ing. Industrial</option>
-                <option>Ing. Informática</option>
-                <option>Ing. Mecatrónica</option>
-                <option>Ing. Sistemas Computacionales</option>
-                <option>Lic. Administración</option>
-            </select>
         </div>
         <div class="form-group formGroupReg col-sm-6">
+          <label for="especialidad">Carrera</label>
+          <select class="form-control" id="carrera" name = "carrera">
+              <option>Arquitectura</option>
+              <option>Contador Publico</option>
+              <option>Ing. Ambiental</option>
+              <option>Ing. Bioquimica</option>
+              <option>Ing. Gestión Empresarial</option>
+              <option>Ing. Industrial</option>
+              <option>Ing. Informática</option>
+              <option>Ing. Mecatrónica</option>
+              <option>Ing. Sistemas Computacionales</option>
+              <option>Lic. Administración</option>
+          </select>
           <label for="CURP">CURP</label>
           <input required type="text" class="form-control formReg" id="CURP" value="" name="curp" minlength="18" maxlength="18"
           pattern="([A-Z]{4}([0-9]{2})(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])[HM](AS|BC|BS|CC|CL|CM|CS|CH|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)[A-Z]{3}[0-9A-Z]\d)">
