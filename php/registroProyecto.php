@@ -23,7 +23,7 @@
                 <a class="textoMenu">Registro Proyecto</a>
             </div>
     </div>
-    <form name="formulario" action="../php/i_proyecto.php" method="POST">
+    <form name="formulario" action="../php/i_proyecto.php  <?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
     <div class="container-fluid row">
         <div class="form-group formGroupReg col-sm-12">
             <label for="titulo">Título del proyecto: </label>
@@ -36,14 +36,21 @@
             <label for="noParticipantes">Número Máximo de Participantes</label>
             <input require type="number" class="form-control formPart" name="Integrantes"  pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="solo números">
             <div class="text-right">
-                    <input type="submit" action="../php/i_proyecto.php" onclick=location.href='registroProyecto.php' class="btn btn-black btnreg text-center btn-success" 
-                    value="Guardar"/>
-                    <button onclick=location.href='../opciones_proyecto.html' type="button" 
-                    class="btn btn-black btnreg text-center btn-warning">Cancelar</button>
+                <input type="submit" action="../php/i_proyecto.php"  class="btn btn-black btnreg text-center btn-success" 
+                value="Guardar"/>
+                <button onclick=location.href='../opciones_proyecto.html' type="button" 
+                <input type="submit" action="../php/i_proyecto.php" class="btn btn-black btnreg text-center btn-success"
+                value="Guardar"/>
+                <button onclick=location.href='../opciones_proyecto.html' type="button"
+                class="btn btn-black btnreg text-center btn-warning">Cancelar</button>
             </div>
         </div>
       </div>
       </form>
+
+
+      <script src="bootstrap/js/jquery-1.8.3.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
 </body>
 </html>
