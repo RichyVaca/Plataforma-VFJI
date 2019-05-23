@@ -20,9 +20,10 @@
   $resultado = $conexion -> query($query);
 
   if ($resultado) {
+    echo '<script>alert("REGISTRO GUARDADO")</script> ';
     header("registroAlumnos.php");
     //Aqui va aviso de que se registro correctamente
-
+    echo "<script>location.href='registroAlumnos.php'</script>";
   }else{
     echo "No se ha podido registrar el proyecto";
   }

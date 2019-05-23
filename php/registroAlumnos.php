@@ -87,14 +87,11 @@
                     <option>Instituto Tecnológico de Puebla</option>
                 </select>
             </div>
-            <div class="col-sm-12 text-center">
-
-            </div>
-                <button type= submit class="btn btn-black btnreg text-center btn-success">Guardar</button>
+            <div class="text-right col-sm-12">
+                <input type="submit" action="alumnos.php"  class="btn btn-black btnreg text-center btn-success" 
+                    value="Guardar"/>  
                 <button onclick=location.href='../submenu_alumno.html' type="submit" class="btn btn-black btnreg text-center btn-warning">Cancelar</button>
             </div>
         </form>
-
-
 </body>
 </html>

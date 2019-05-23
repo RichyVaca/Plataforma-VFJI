@@ -38,9 +38,6 @@
             <div class="text-right">
                 <input type="submit" action="../php/i_proyecto.php"  class="btn btn-black btnreg text-center btn-success" 
                 value="Guardar"/>
-                <button onclick=location.href='../opciones_proyecto.html' type="button" 
-                <input type="submit" action="../php/i_proyecto.php" class="btn btn-black btnreg text-center btn-success"
-                value="Guardar"/>
                 <button onclick=location.href='../opciones_proyecto.html' type="button"
                 class="btn btn-black btnreg text-center btn-warning">Cancelar</button>
             </div>

@@ -29,6 +29,10 @@
         <div class="form-group formGroupReg col-sm-6">
           <label for="nombre">Nombre: </label>
           <input required type="text" class="form-control formReg" id="nombre" value="" name="nombre" onpaste="return false">
+          <label for="nombre">Primer Apellido: </label>
+            <input required type="text" class="form-control formReg" id="primerA" value="" name="primerA" onpaste="return false">
+            <label for="nombre">Segundo Apellido: </label>
+            <input required type="text" class="form-control formReg" id="segundoA" value="" name="SegundoA" onpaste="return false">
           <label for="telefono">Teléfono</label>
           <input required type="text" class="form-control formReg" id="telefono" value="" name="telefono"
           pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="solo números">
