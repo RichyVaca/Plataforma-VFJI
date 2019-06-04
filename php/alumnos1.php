@@ -1,4 +1,4 @@
-<?php
+  <?php
   include("conexion.php");
 
   $CURP = $_POST['curp']; //listo
