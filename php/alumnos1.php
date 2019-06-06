@@ -13,11 +13,9 @@
   $semestre = $_POST['semestre'];//listo
   $correo = $_POST['correo'];
 
-  //echo $numeroco." ".$CURP." ".$nombre." ".$primerA." ".$segundoA." ".$genero." ".$telefono." ".$plantel." ".$semestre." ".$correo." ".$carrera
-
- $query = "INSERT INTO alumnos(NoControl,CURP,Nombre,PrimerApellido,SegundoApellido,Genero,Telefono,Plantel,Semestre,Correo,Carrera)
-  VALUES ('$numeroco','$CURP','$nombre','$primerA','$segundoA',$genero,'$telefono','$plantel','$semestre','$correo','$carrera')";
+  $query = "CALL sp_InsertAlumno('".$numeroco."','".$CURP."','".$nombre."','".$primerA."','".$segundoA."','".$genero."','".$telefono."','".$plantel."','.$semestre.','".$correo."','".$carrera."',@idalumno);";
   $resultado = $conexion -> query($query);
+
 
   if ($resultado) {
     echo '<script>alert("REGISTRO GUARDADO")</script> ';
@@ -27,7 +25,7 @@
     //Aqui va aviso de que se registro correctamente
 
   }else{
-    echo "Error en la conexion";
+    echo '<script>alert("Error en el registro")</script> ';
     echo "<script>location.href='registroAlumnos.php'</script>";
   }
 

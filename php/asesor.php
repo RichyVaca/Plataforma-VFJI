@@ -2,19 +2,20 @@
 include("conexion.php");
 $curp = $_POST['curp'];
 $nombre= $_POST['nombre'];
+$primerA = $_POST['primerAp'];
+$segundoA = $_POST['segundoAp'];
 $telefono=$_POST['telefono'];
 $carrera= $_POST['carrera'];
 $correo= $_POST['correo'];
-$linea2 = $_POST['linea2'];
+$linea2 = $_POST['lineaI'];
 $grado= $_POST['grado'];
 $plantel =$_POST['plantel'];
+$fecha = $_POST['fecha'];
 
 
 //echo $curp . $nombre . $telefono . $carrera . $correo . $linea
 
-$query = "INSERT INTO asesor(curp,nombre,telefono,carrera,correo,linea,grado,plantel)
-VALUES ('$curp','$nombre','$telefono','$carrera','$correo','$linea2a','$grado','$plantel')";
-$resultado = $conexion -> query($query);
+$query = "CALL sp_InsertUsuario('".$curp."','".$nombre."','".$primerA."','".$segundoA."','".$telefono."','".$plantel."','".$correo."','".$fecha."',)"
 
 if ($resultado) {
   header("Registro.php");

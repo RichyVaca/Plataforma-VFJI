@@ -6,11 +6,10 @@ $resumen= $_POST['Resumen'];
 $requisitos=$_POST['Requisitos'];
 $numero= $_POST['Integrantes'];
 
-$query = "INSERT INTO proyectos(Titulo,Resumen,Requisitos,Integrantes)
-VALUES ('$titulo','$resumen','$requisitos','$numero')";
-$resultado = $conexion -> query($query);
+$query = "CALL sp_InsertarProyecto('".$titulo."','".$resumen."','".$requisitos."','.$numero.');";
 
-if ($resultado) {
+if (mysqli_query($conexion, $query)) {
+
   echo '<script>alert("REGISTRO GUARDADO")</script> ';
   header("registroProyecto.php");
 

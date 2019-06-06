@@ -24,15 +24,15 @@
                 <a class="textoMenu">Registro Asesor</a>
             </div>
     </div>
-    <form name="" action="../php/RegistroUsuario.php" method="POST">
+    <form name="" action="../php/asesor.php" method="POST">
     <div class="container-fluid row">
         <div class="form-group formGroupReg col-sm-6">
           <label for="nombre">Nombre: </label>
           <input required type="text" class="form-control formReg" id="nombre" value="" name="nombre" onpaste="return false">
           <label for="nombre">Primer Apellido: </label>
-          <input required type="text" class="form-control formReg" id="nombre" value="" name="nombre" onpaste="return false">
+          <input required type="text" class="form-control formReg" id="nombre" value="" name="primerAp" onpaste="return false">
           <label for="nombre">Segundo Apellido: </label>
-          <input required type="text" class="form-control formReg" id="nombre" value="" name="nombre" onpaste="return false">
+          <input required type="text" class="form-control formReg" id="nombre" value="" name="segundoAp" onpaste="return false">
           <label for="telefono">Teléfono</label>
           <input required type="text" class="form-control formReg" id="telefono" value="" name="telefono"
           pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="solo números">
@@ -45,8 +45,8 @@
             </select>
         </div>
         <div class="form-group formGroupReg col-sm-6">
-          <label for="especialidad">Carrera</label>
-          <select class="form-control" id="carrera" name = "carrera">
+          <label for="especialidad">Especialidad</label>
+          <select class="form-control" id="carrera" name = "especialidad">
               <option>Arquitectura</option>
               <option>Contador Publico</option>
               <option>Ing. Ambiental</option>
