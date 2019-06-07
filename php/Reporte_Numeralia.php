@@ -36,43 +36,123 @@
                             </tr>
                             <tr>
                                 <td>Administración</td>
-                                <td></td>
+                                <td> <?php
+                                include("conexion.php");
+                                $query = "SELECT count(*) as Administracion FROM usuarios where Programa  = 'Administracion'  GROUP BY Programa";
+                                $resultado = $conexion -> query($query);
+                                if ($row = $resultado->fetch_assoc()) {
+                                      echo $row['Administracion'];
+                                  }else{
+                                    echo "0";
+                                  } ?> </td>
                             </tr>
                             <tr>
                                 <td>Ambiental</td>
-                                <td></td>
+                                <td> <?php
+                                include("conexion.php");
+                                $query = "SELECT count(*) as Ambiental FROM usuarios where Programa  = 'Ambiental'  GROUP BY Programa";
+                                $resultado = $conexion -> query($query);
+                                if ($row = $resultado->fetch_assoc()) {
+                                      echo $row['Ambiental'];
+                                  }else{
+                                    echo "0";
+                                  } ?></td>
                             </tr>
                             <tr>
                                 <td>Arquitectura</td>
-                                <td></td>
+                                <td> <?php
+                                include("conexion.php");
+                                $query = "SELECT count(*) as Arquitectura FROM usuarios where Programa  = 'Arquitectura'  GROUP BY Programa";
+                                $resultado = $conexion -> query($query);
+                                if ($row = $resultado->fetch_assoc()) {
+                                      echo $row['Arquitectura'];
+                                  }else{
+                                    echo "0";
+                                  } ?></td>
                             </tr>
                             <tr>
                                 <td>Bioquímica</td>
-                                <td></td>
+                                <td> <?php
+                                include("conexion.php");
+                                $query = "SELECT count(*) as Bioquimica FROM usuarios where Programa  = 'Bioquímica'  GROUP BY Programa";
+                                $resultado = $conexion -> query($query);
+                                if ($row = $resultado->fetch_assoc()) {
+                                      echo $row['Bioquímica'];
+                                  }else{
+                                    echo "0";
+                                  } ?></td>
                             </tr>
                             <tr>
                                 <td>Contador</td>
-                                <td></td>
+                                <td> <?php
+                                include("conexion.php");
+                                $query = "SELECT count(*) as Contador FROM usuarios where Programa  = 'Contador'  GROUP BY Programa";
+                                $resultado = $conexion -> query($query);
+                                if ($row = $resultado->fetch_assoc()) {
+                                      echo $row['Contador'];
+                                  }else{
+                                    echo "0";
+                                  } ?></td>
                             </tr>
                             <tr>
                                 <td>Gestión</td>
-                                <td></td>
+                                <td> <?php
+                                include("conexion.php");
+                                $query = "SELECT count(*) as Gestion FROM usuarios where Programa  = 'Gestión'  GROUP BY Programa";
+                                $resultado = $conexion -> query($query);
+                                if ($row = $resultado->fetch_assoc()) {
+                                      echo $row['Gestión'];
+                                  }else{
+                                    echo "0";
+                                  } ?></td>
                             </tr>
                             <tr>
                                 <td>Industrial</td>
-                                <td></td>
+                                <td> <?php
+                                include("conexion.php");
+                                $query = "SELECT count(*) as Industrial FROM usuarios where Programa  = 'Industrial'  GROUP BY Programa";
+                                $resultado = $conexion -> query($query);
+                                if ($row = $resultado->fetch_assoc()) {
+                                      echo $row['Industrial'];
+                                  }else{
+                                    echo "0";
+                                  } ?></td>
                             </tr>
                             <tr>
                                 <td>Informática</td>
-                                <td></td>
+                                <td> <?php
+                                $query = "SELECT count(*) as Informatica FROM usuarios where Programa  = 'Informática'  GROUP BY Programa";
+                                include("conexion.php");
+                                $resultado = $conexion -> query($query);
+                                if ($row = $resultado->fetch_assoc()) {
+                                      echo $row['Informática'];
+                                  }else{
+                                    echo "0";
+                                  } ?></td>
                             </tr>
                             <tr>
                                 <td>Mecatrónica</td>
-                                <td></td>
+                                <td> <?php
+                                include("conexion.php");
+                                $query = "SELECT count(*) as Mecatronica FROM usuarios where Programa  = 'Mecatrónica'  GROUP BY Programa";
+                                $resultado = $conexion -> query($query);
+                                if ($row = $resultado->fetch_assoc()) {
+                                      echo $row['Mecatrónica'];
+                                  }else{
+                                    echo "0";
+                                  } ?></td>
                             </tr>
                             <tr>
                                 <td>Sitemas</td>
-                                <td></td>
+                                <td> <?php
+                                include("conexion.php");
+                                $query = "SELECT count(*) as Sistemas FROM usuarios where Programa  = 'Sistemas'  GROUP BY Programa";
+                                $resultado = $conexion -> query($query);
+                                if ($row = $resultado->fetch_assoc()) {
+                                      echo $row['Sistemas'];
+                                  }else{
+                                    echo "0";
+                                  } ?></td>
                             </tr>
                             <tr>
                                 <th>Total</th>
@@ -90,43 +170,123 @@
                             </tr>
                             <tr>
                                 <td>Administración</td>
-                                <td></td>
+                                <td> <?php
+                                include("conexion.php");
+                                $query = "SELECT count(*) as Administracion FROM alumnos where Carrera  = 'Administración'  GROUP BY Carrera";
+                                $resultado = $conexion -> query($query);
+                                if ($row = $resultado->fetch_assoc()) {
+                                      echo $row['Administración'];
+                                  }else{
+                                    echo "0";
+                                  } ?></td>
                             </tr>
                             <tr>
                                 <td>Ambiental</td>
-                                <td></td>
+                                <td><?php
+                                include("conexion.php");
+                                $query = "SELECT count(*) as Ambiental FROM alumnos where Carrera  = 'Administración'  GROUP BY Carrera";
+                                $resultado = $conexion -> query($query);
+                                if ($row = $resultado->fetch_assoc()) {
+                                      echo $row['Ambiental'];
+                                  }else{
+                                    echo "0";
+                                  } ?></td>
                             </tr>
                             <tr>
                                 <td>Arquitectura</td>
-                                <td></td>
+                                <td><?php
+                                include("conexion.php");
+                                $query = "SELECT count(*) as Arquitectura FROM usuarios where Programa  = 'Arquitectura'  GROUP BY Programa";
+                                $resultado = $conexion -> query($query);
+                                if ($row = $resultado->fetch_assoc()) {
+                                      echo $row['Arquitectura'];
+                                  }else{
+                                    echo "0";
+                                  } ?></td>
                             </tr>
                             <tr>
                                 <td>Bioquímica</td>
-                                <td></td>
+                                <td><?php
+                                include("conexion.php");
+                                $query = "SELECT count(*) as Bioquimica FROM alumnos where Carrera  = 'Bioquímica'  GROUP BY Carrera";
+                                $resultado = $conexion -> query($query);
+                                if ($row = $resultado->fetch_assoc()) {
+                                      echo $row['Bioquímica'];
+                                  }else{
+                                    echo "0";
+                                  } ?></td>
                             </tr>
                             <tr>
-                                <td>Contador</td>
-                                <td></td>
+                                <td>Contabilidad</td>
+                                <td> <?php
+                                include("conexion.php");
+                                $query = "SELECT count(*) as Contabilidad FROM alumnos where Carrera  = 'Contabilidad'  GROUP BY Carrera";
+                                $resultado = $conexion -> query($query);
+                                if ($row = $resultado->fetch_assoc()) {
+                                      echo $row['Contabilidad'];
+                                  }else{
+                                    echo "0";
+                                  } ?></td>
                             </tr>
                             <tr>
                                 <td>Gestión</td>
-                                <td></td>
+                                <td> <?php
+                                include("conexion.php");
+                                $query = "SELECT count(*) as Gestion FROM alumnos where Carrera  = 'Gestión'  GROUP BY Carrera";
+                                $resultado = $conexion -> query($query);
+                                if ($row = $resultado->fetch_assoc()) {
+                                      echo $row['Gestión'];
+                                  }else{
+                                    echo "0";
+                                  } ?></td>
                             </tr>
                             <tr>
                                 <td>Industrial</td>
-                                <td></td>
+                                <td> <?php
+                                include("conexion.php");
+                                $query = "SELECT count(*) as Industrial FROM alumnos where Carrera  = 'Industrial'  GROUP BY Carrera";
+                                $resultado = $conexion -> query($query);
+                                if ($row = $resultado->fetch_assoc()) {
+                                      echo $row['Industrial'];
+                                  }else{
+                                    echo "0";
+                                  } ?></td>
                             </tr>
                             <tr>
                                 <td>Informática</td>
-                                <td></td>
+                                <td> <?php
+                                $query = "SELECT count(*) as Informatica FROM alumnos where Carrera  = 'Informática'  GROUP BY Carrera";
+                                include("conexion.php");
+                                $resultado = $conexion -> query($query);
+                                if ($row = $resultado->fetch_assoc()) {
+                                      echo $row['Informática'];
+                                  }else{
+                                    echo "0";
+                                  } ?></td>
                             </tr>
                             <tr>
                                 <td>Mecatrónica</td>
-                                <td></td>
+                                <td> <?php
+                                include("conexion.php");
+                                $query = "SELECT count(*) as Mecatronica FROM alumnos where Carrera  = 'Mecatrónica'  GROUP BY Carrera";
+                                $resultado = $conexion -> query($query);
+                                if ($row = $resultado->fetch_assoc()) {
+                                      echo $row['Mecatrónica'];
+                                  }else{
+                                    echo "0";
+                                  } ?></td>
                             </tr>
                             <tr>
-                                <td>Sitemas</td>
-                                <td></td>
+                                <td>Sistemas</td>
+                                <td> <?php
+                                include("conexion.php");
+                                $query = "SELECT count(*) as Sistemas FROM alumnos where Carrera  = 'Sistemas'  GROUP BY Carrera";
+                                $resultado = $conexion -> query($query);
+                                if ($row = $resultado->fetch_assoc()) {
+                                      echo $row['Sistemas'];
+                                  }else{
+                                    echo "0";
+                                  } ?></td>
                             </tr>
                             <tr>
                                 <th>Total</th>

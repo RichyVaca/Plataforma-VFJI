@@ -45,9 +45,7 @@
                         </thead>
                        <tbody>
                            <?php
-                           //Conexión con la DB
-                           //Preguntarle a Zúñiga como hacer la consulta
-                           //Aquí se genera la consulta
+
                             ?>
                            <tr>
                                <td></td>
