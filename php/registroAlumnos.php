@@ -54,14 +54,14 @@
                 <select class="form-control" id="carrera" name = "carrera">
                     <option>Arquitectura</option>
                     <option>Contador Publico</option>
-                    <option>Ing. Ambiental</option>
-                    <option>Ing. Bioquimica</option>
-                    <option>Ing. Gestión Empresarial</option>
-                    <option>Ing. Industrial</option>
-                    <option>Ing. Informática</option>
-                    <option>Ing. Mecatrónica</option>
-                    <option>Ing. Sistemas Computacionales</option>
-                    <option>Lic. Administración</option>
+                    <option>Ambiental</option>
+                    <option>Bioquimica</option>
+                    <option>Gestión Empresarial</option>
+                    <option>Industrial</option>
+                    <option>Informática</option>
+                    <option>Mecatrónica</option>
+                    <option>Sistemas</option>
+                    <option>Administración</option>
                 </select>
                 <label for="semestre">Semestre</label>
                 <select class="form-control selectsmtr" id="semestre" name="semestre">
@@ -87,12 +87,8 @@
                     <option>Instituto Tecnológico de Puebla</option>
                 </select>
             </div>
-            <div class="col-sm-12 text-center">
-
-            </div>
-                <button type= submit class="btn btn-black btnreg text-center btn-success">Guardar</button>
-                <button onclick=location.href='../submenu_alumno.html' type="submit" class="btn btn-black btnreg text-center btn-warning">Cancelar</button>
-            </div>
+            <button type= submit class="btn btn-black btnreg text-center btn-success">Guardar</button>
+            <button onclick=location.href='../Ventana_Menu.html' type="submit" class="btn btn-black btnreg text-center btn-warning">Cancelar</button>
         </form>
         <script src="bootstrap/js/jquery-1.8.3.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>

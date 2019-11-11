@@ -23,22 +23,41 @@
             <div class="text-center">
                 <a class="textoMenu">Entregables</a>
             </div>
+            
     </div>
+    
     <div class="contain-fluid row">
         <div class="form-group text-center col-sm-5">
-            <label for="art" class="labelentr">Articulo</label>
+          <form action="php/sube.php" method="post" enctype="multipart/form-data">
+            <label for="crtl" class="labelentr">Seleccionar proyecto</label>
+            <select class="form-control " id="semestre" name="">
+                <option>Ejemplo</option>
+            </select>
+            <label for="crtl" class="labelentr">Articulo</label>
+        		<input type="file" name="archivo"  class="form-control formlogin" >
+        		<br><br>
+        		<button class="btn btn-black btnreg text-center btn-warning" >Subir Archivo</button>
+        	</form>
             <div></div>
-            <input class="form-control formlogin" type="text" name="Usuario" placeholder="Ingrese URL del Articulo" required autofocus></input>
-            <div></div>
+            <form action="php/sube2.php" method="post" enctype="multipart/form-data">
             <label for="crtl" class="labelentr">Cartel</label>
+            <input type="file" name="archivo2"  class="form-control formlogin" >
+            <br><br>
+            <button class="btn btn-black btnreg text-center btn-warning" >Subir Archivo</button>
+            </form>
             <div></div>
-            <input class="form-control formlogin" type="text" name="Usuario" placeholder="Ingrese URL del Cartel" required autofocus></input>
+
+
         </div>
         <div class="form-group text-center col-sm-5">
-            <button onclick= type="button" class="btn btn-black btnreg text-center btn-success">Guardar</button>
+
             <div class="form-group text-center col-sm-12">
                     <button onclick=location.href='Ventana_Menu.html' type="button" class="btn btn-black btnreg text-center btn-warning">Cancelar</button>
             </div>
+
+
+
+
         </div>
 
 

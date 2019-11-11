@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,6 @@
     <title>Registro Alumnos - VFJI</title>
 </head>
 <link rel="stylesheet" href="../css/estilo.css">
-
 <body>
     <!-- Barra -->
     <div class="container-fluid">
@@ -21,29 +20,25 @@
             </form>
             </nav>
             <div class="text-center">
-                <a class="textoMenu">Modificación Alumno</a>
+                <a class="textoMenu">Modificación Asesor</a>
             </div>
     </div>
-    <form name="formulario" action="modificarAl.php" method="POST">
+    <form name="formulario" action="../php/modificarAs.php" method="POST">
         <div class="container-fluid row">
         <?php
             include("conexion.php");
             $id = $_REQUEST["Id"];
 
-            $query = "SELECT * FROM alumnos where Id = '$id'";
+            $query = "SELECT * FROM usuarios where Id = '$id'";
             $resultado = $conexion -> query($query);
 
             while ($row = $resultado -> fetch_assoc()){                    
         ?>
         <div class="form-group formGroupReg col-sm-6">
             <input type="hidden" value="<?php echo $id; ?>" name="id">
-            <label for="CURP">Numero de Control</label>
-            <input required type="text" class="form-control formReg" id="nombre" value="<?php echo $row['NoControl']; ?>" name="numeroco"
-                onpaste="return false">
             <label for="CURP">CURP:</label>
             <input required type="text" class="form-control formReg" id="CURP" value="<?php echo $row['CURP']; ?>" name="curp" minlength="18" maxlength="18"
             pattern="([A-Z]{4}([0-9]{2})(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])[HM](AS|BC|BS|CC|CL|CM|CS|CH|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)[A-Z]{3}[0-9A-Z]\d)">
-
             <label for="nombre">Nombre: </label>
             <input required type="text" class="form-control formReg" id="nombre" value="<?php echo $row['Nombre']; ?>" name="nombre"
             onpaste="return false">
@@ -53,40 +48,15 @@
             <label for="nombre">Segundo Apellido: </label>
             <input required type="text" class="form-control formReg" id="nombre" value="<?php echo $row['SegundoApellido']; ?>" name="segundoA"
             onpaste="return false">
-            <label for="carrera">Genero: </label>
-            <select class="form-control" id="carrera" name="genero">
-                <option value="Masculino">Masculino</option>
-                <option value="Femenino">Femenino</option>
-            </select>
+            <label for="nombre">Fecha de Nacimiento </label>
+            <input required type="date" class="form-control formReg" id="nombre" value="<?php echo $row['Fecha']; ?>" name="fecha" onpaste="return false">
             <div></div>
         </div>
         <div class="form-group formGroupReg col-sm-6">
-            <label for="carrera">Carrera</label>
-            <select class="form-control" id="carrera" name = "carrera">
-                <option><?php echo $row['Carrera']; ?></option>
-                <option>Arquitectura</option>
-                <option>Contador Publico</option>
-                <option>Ing. Ambiental</option>
-                <option>Ing. Bioquimica</option>
-                <option>Ing. Gestión Empresarial</option>
-                <option>Ing. Industrial</option>
-                <option>Ing. Informática</option>
-                <option>Ing. Mecatrónica</option>
-                <option>Ing. Sistemas Computacionales</option>
-                <option>Lic. Administración</option>
-            </select>
-            <label for="semestre">Semestre</label>
-            <select class="form-control selectsmtr" id="semestre" name="semestre">
-                <option><?php echo $row['Semestre']; ?></option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>9</option>
-            </select>
+            <label for="especialidad">Programa</label>
+            <input required type="text" class="form-control formReg" id="nombre" value="<?php echo $row['Programa']; ?>" name="programa" onpaste="return false">
+            <label for="especialidad">Especialidad</label>
+            <input required type="text" class="form-control formReg" id="nombre" value="<?php echo $row['Especialidad']; ?>" name="especialidad" onpaste="return false"> 
             <label for="Email" name="correo">Correo Electrónico</label>
             <input required type="email" class="form-control formReg" id="Email" value="<?php echo $row['Correo']; ?>" name="correo">
             <label for="telefono" name="telefono">Teléfono</label>
@@ -100,15 +70,24 @@
                 <option>Instituto Tecnológico de Ciudad Juárez</option>
                 <option>Instituto Tecnológico de Puebla</option>
             </select>
+            <label for="l-inv">Línea de Investigación</label>
+            <select class="form-control" id="Plantel" name="linea">
+                <option value="<?php echo $row['Linea']; ?>"><?php echo $row['Linea']; ?></option>
+                <option>Ineniería de Software</option>
+                <option>Tópicos de TI y Comunicación</option>
+                <option>Tecnología WEB</option>
+                <option>Optimización de procesos productivos</option>
+                <option>Innovación Mecatrónica</option>
+            </select>
+            
         </div>
         <?php
             }
         ?>
+            <input type= submit class="btn btn-black btnreg text-center btn-success" value = "Guardar">
+            <input  type ="button" class="btn btn-black btnreg text-center btn-warning" onclick=location.href='tabla_Asesor.php' value="Cancelar">
     </form>
-    <input type= "submit" class="btn btn-black btnreg text-center btn-success" value="Guardar">
-    <input  type ="button" class="btn btn-black btnreg text-center btn-warning" onclick=location.href='Reporte_Estudiantes.php' value="Cancelar">
-    <script src="bootstrap/js/jquery-1.8.3.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+
 
 </body>
 </html>

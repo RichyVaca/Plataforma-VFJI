@@ -33,42 +33,29 @@
           <input required type="text" class="form-control formReg" id="nombre" value="" name="primerAp" onpaste="return false">
           <label for="nombre">Segundo Apellido: </label>
           <input required type="text" class="form-control formReg" id="nombre" value="" name="segundoAp" onpaste="return false">
+          <label for="CURP">CURP</label>
+          <input required type="text" class="form-control formReg" id="CURP" value="" name="curp" minlength="18" maxlength="18"
+          pattern="([A-Z]{4}([0-9]{2})(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])[HM](AS|BC|BS|CC|CL|CM|CS|CH|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)[A-Z]{3}[0-9A-Z]\d)">
           <label for="telefono">Teléfono</label>
           <input required type="text" class="form-control formReg" id="telefono" value="" name="telefono"
           pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="solo números">
-            <label for="Plantel">Plantel</label>
+          <label for="nombre">Fecha de Nacimiento </label>
+          <input required type="date" class="form-control formReg" id="nombre" value="" name="fecha" onpaste="return false">
+        </div>
+        <div class="form-group formGroupReg col-sm-6">
+            <label for="especialidad">Programa</label>
+          <input required type="text" class="form-control formReg" id="nombre" value="" name="programa" onpaste="return false">
+          <label for="especialidad">Especialidad</label>
+          <input required type="text" class="form-control formReg" id="nombre" value="" name="especialidad" onpaste="return false">
+          <label for="Plantel">Plantel</label>
             <select class="form-control" id="Plantel" name="plantel">
                 <option>Instituto Tecnologico de Colima</option>
                 <option>Instituto Tecnologico de Ciudad Guzmán</option>
                 <option>Instituto Tecnologico de Ciudad Juárez</option>
                 <option>Instituto Tecnologico de Puebla</option>
             </select>
-        </div>
-        <div class="form-group formGroupReg col-sm-6">
-          <label for="especialidad">Especialidad</label>
-          <select class="form-control" id="carrera" name = "especialidad">
-              <option>Arquitectura</option>
-              <option>Contador Publico</option>
-              <option>Ing. Ambiental</option>
-              <option>Ing. Bioquimica</option>
-              <option>Ing. Gestión Empresarial</option>
-              <option>Ing. Industrial</option>
-              <option>Ing. Informática</option>
-              <option>Ing. Mecatrónica</option>
-              <option>Ing. Sistemas Computacionales</option>
-              <option>Lic. Administración</option>
-          </select>
-          <label for="CURP">CURP</label>
-          <input required type="text" class="form-control formReg" id="CURP" value="" name="curp" minlength="18" maxlength="18"
-          pattern="([A-Z]{4}([0-9]{2})(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])[HM](AS|BC|BS|CC|CL|CM|CS|CH|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)[A-Z]{3}[0-9A-Z]\d)">
           <label for="correo">Correo Electronico</label>
         <input required type="email" class="form-control formReg" id="Email" value="" name="correo">
-            <label for="Grado">Grado</label>
-            <select class="form-control" id="Grado" name="grado">
-                <option>Licenciatura</option>
-                <option>Maestría</option>
-                <option>Doctorado</option>
-            </select>
             <label for="l-inv">Línea de Investigación</label>
             <select class="form-control" id="Plantel" name="lineaI">
                 <option>Ineniería de Software</option>
@@ -78,11 +65,9 @@
                 <option>Innovación Mecatrónica</option>
             </select>
         </div>
-        <div class="col-sm-12 text-center">
-          <input type="submit"  class="btn btn-black btnreg text-center btn-success"/>
+          <input type="submit"  class="btn btn-black btnreg text-center btn-success" value="Guardar"/>
             <!-- <button onclick= type="button" class="btn btn-black btnreg text-center btn-success">Guardar</button> -->
-            <button onclick=location.href='../Ventana_Menu.html' type="button" class="btn btn-black btnreg text-center btn-warning">Cancelar</button>
-        </div>
+            <button onclick=location.href='../opciones_asesores.html' type="submit" class="btn btn-black btnreg text-center btn-warning">Cancelar</button>
 
     </div>
 </form>

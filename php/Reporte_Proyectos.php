@@ -40,45 +40,49 @@
                                 <th>Cartel</th>
                             </tr>
                             <tr>
-                                <td rowspan="3">1</td>
-                                <td rowspan="3">DroneHelp</td>
-                                <td>Carlos Antonio Rodriguez Garcia </td>
-                                <td>Participante 1</td>
-                                <td rowspan="3">Informática</td>
-                                <td rowspan="3">RIIIT: Modelo para la evaluación; Investigación y Ciencia: Accesibilidad Universal</td>
-                                <td rowspan="3">https://mail.google.com/mail/u/0/#search/evelia?projector=1</td>
-                                <td rowspan="3">https://www.google.com/</td>
+                          
+                                <td rowspan="3"></td>
+
+                                <td rowspan="3"></td>
+                                <td></td>
+                                <td></td>
+                                <td rowspan="3"></td>
+                                <td rowspan="3"></td>
+                                <td rowspan="3"></td>
+                                <td rowspan="3"></td>
                                 <tr>
-                                    <td>Ricardo Hiram Morales Vaca</td>
-                                    <td>Participante 2</td>
+                                    <td></td>
+                                    <td></td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td>Participante 3</td>
+                                    <td></td>
                                 </tr>
                                 <tr>
                                     <tr></tr>
                                 </tr>
                             </tr>
                             <tr>
-                                    <td rowspan="3">1</td>
-                                    <td rowspan="3">DroneHelp</td>
-                                    <td>Jorge Castellanos Morfin </td>
-                                    <td>Participante 1</td>
-                                    <td rowspan="3">Sistemas</td>
-                                    <td rowspan="3">RIIIT: Modelo para la evaluación; Investigación y Ciencia: Accesibilidad Universal</td>
-                                    <td rowspan="3">https://mail.google.com/mail/u/0/#search/evelia?projector=1</td>
-                                    <td rowspan="3">https://www.google.com/</td>
+                                    <td rowspan="3"></td>
+                                    <td rowspan="3"></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td rowspan="3"></td>
+                                    <td rowspan="3"></td>
+                                    <td rowspan="3"></td>
+                                    <td rowspan="3"></td>
                                     <tr>
                                         <td></td>
-                                        <td>Participante 2</td>
+                                        <td></td>
                                     </tr>
                                     <tr>
                                         <td></td>
-                                        <td>Participante 3</td>
+                                        <td></td>
                                     </tr>
                                 </tr>
+
                         </table>
+
                     </div>
                 </div>
             </div>

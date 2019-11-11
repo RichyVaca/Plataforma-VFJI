@@ -5,24 +5,25 @@ $nombre= $_POST['nombre'];
 $primerA = $_POST['primerAp'];
 $segundoA = $_POST['segundoAp'];
 $telefono=$_POST['telefono'];
-$carrera= $_POST['carrera'];
+$programa= $_POST['programa'];
 $correo= $_POST['correo'];
 $linea2 = $_POST['lineaI'];
-$grado= $_POST['grado'];
 $plantel =$_POST['plantel'];
 $fecha = $_POST['fecha'];
+$especialidad = $_POST['especialidad'];
 
-
-//echo $curp . $nombre . $telefono . $carrera . $correo . $linea
-
-$query = "CALL sp_InsertUsuario('".$curp."','".$nombre."','".$primerA."','".$segundoA."','".$telefono."','".$plantel."','".$correo."','".$fecha."',)"
+$query = "CALL sp_InsertUsuario('".$curp."','".$nombre."','".$primerA."','".$segundoA."','".$telefono."','".$plantel."','".$correo."','".$fecha."','".$programa."','".$linea2."','".$especialidad."', @idusuario);";
+$resultado = $conexion -> query($query);
 
 if ($resultado) {
+  echo '<script>alert("REGISTRO GUARDADO")</script> ';
   header("Registro.php");
-  //Aqui va aviso de que se registro correctamente
+
+  echo "<script>location.href='registroAlumnos.php'</script>";
 
 }else{
-  echo "No se ha podido registrar el proyecto";
+  echo '<script>alert("Error en el registro")</script> ';
+  echo "<script>location.href='Registro.php'</script>";
 }
 
 

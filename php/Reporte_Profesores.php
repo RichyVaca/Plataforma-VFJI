@@ -28,7 +28,7 @@
         </form>
         </nav>
         <div class="text-center">
-            <a class="textoMenu">Profesores de VFJI</a>
+            <a class="textoMenu">Profesores Asociados</a>
         </div>
 
         <div class="container-fluid">

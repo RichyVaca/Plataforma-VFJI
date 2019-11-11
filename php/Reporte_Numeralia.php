@@ -28,7 +28,7 @@
             <!-- Creacion de la tabla-->
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-3">
                         <table class="table-hover">
                             <tr>
                                 <th>Profesores</th>
@@ -41,7 +41,7 @@
                                 $query = "SELECT count(*) as Administracion FROM usuarios where Programa  = 'Administracion'  GROUP BY Programa";
                                 $resultado = $conexion -> query($query);
                                 if ($row = $resultado->fetch_assoc()) {
-                                      echo $row['Administracion'];
+                                      echo $row['Lic. Administracion'];
                                   }else{
                                     echo "0";
                                   } ?> </td>
@@ -98,7 +98,7 @@
                                 <td>Gestión</td>
                                 <td> <?php
                                 include("conexion.php");
-                                $query = "SELECT count(*) as Gestion FROM usuarios where Programa  = 'Gestión'  GROUP BY Programa";
+                                $query = "SELECT count(*) as Gestion FROM usuarios where Programa  = 'Gestión Empresarial'  GROUP BY Programa";
                                 $resultado = $conexion -> query($query);
                                 if ($row = $resultado->fetch_assoc()) {
                                       echo $row['Gestión'];
@@ -121,11 +121,11 @@
                             <tr>
                                 <td>Informática</td>
                                 <td> <?php
-                                $query = "SELECT count(*) as Informatica FROM usuarios where Programa  = 'Informática'  GROUP BY Programa";
+                                $query = "SELECT count(*) as Informatica FROM usuarios where Programa  = 'Ing. Informatica'  GROUP BY Programa";
                                 include("conexion.php");
                                 $resultado = $conexion -> query($query);
                                 if ($row = $resultado->fetch_assoc()) {
-                                      echo $row['Informática'];
+                                      echo $row['Ing. Informatica'];
                                   }else{
                                     echo "0";
                                   } ?></td>
@@ -162,7 +162,7 @@
 
                     </div>
 
-                    <div class="col-sm-4">
+                    <div class="col-sm-2">
                         <table class="table-hover">
                              <tr>
                                 <th>Alumnos</th>
@@ -295,47 +295,9 @@
                         </table>
 
                     </div>
-                    <div class="col-sm-4">
-                        <table class="table-hover">
-                            <tr>
-                                <th>Articulos por Revista</th>
-                                <th>Cantidad</th>
-                            </tr>
-                            <tr>
-                                <td>Investigación y Ciencia</td>
-                                <td></td>
-
-                            </tr>
-                            <tr>
-                                <td>RIIIT</td>
-                                <td></td>
-
-                            </tr>
-                            <tr>
-                                <td>Con Ciencia</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Ingeniantes</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Cim Orizaba</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Otros</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th>Total</th>
-                                <th></th>
-
-                            </tr>
-                        </table>
-                    </div>
+                    
                     <pre>
-                            <div class="col-sm-4">
+                            <div class="col-sm-3" style="margin-left: 50px;">
                                     <table class="table-hover">
                                         <tr>
                                             <th colspan="2">Proyectos</th>
@@ -352,7 +314,7 @@
                                 </div>
                     </pre>
                     <pre>
-                            <div class="col-sm-4">
+                            <div class="col-sm-3">
                                     <table class="table-hover">
                                         <tr>
                                             <th colspan="3">Artículos</th>
